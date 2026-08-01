@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Original illustration: four abstract figures seen through an augmented-reality overlay, each tagged with a live star rating. The fourth figure's score has fallen and is marked in red.">
+  <defs>
+    <linearGradient id="bgN" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1e252a"/>
+      <stop offset="55%" stop-color="#171d21"/>
+      <stop offset="100%" stop-color="#111619"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="figG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d4a52"/>
+      <stop offset="100%" stop-color="#232c32"/>
+    </linearGradient>
+    <linearGradient id="figDim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f3a41"/>
+      <stop offset="100%" stop-color="#1c2429"/>
+    </linearGradient>
+    <filter id="glowW" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowR" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <g id="star">
+      <path d="M0,-6 L1.76,-2.43 L5.71,-1.85 L2.85,0.93 L3.53,4.85 L0,3 L-3.53,4.85 L-2.85,0.93 L-5.71,-1.85 L-1.76,-2.43 Z"/>
+    </g>
+    <style>
+      .ui  { font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; }
+      .mn  { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; }
+      .num { font-size: 26px; font-weight: 600; letter-spacing: .5px; }
+      .nm  { font-size: 11px; letter-spacing: 2.4px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgN)"/>
+
+  <g opacity="0.05">
+    <g stroke="#dbe3e5" stroke-width="1">
+      <line x1="0" y1="150" x2="1600" y2="150"/><line x1="0" y1="300" x2="1600" y2="300"/>
+      <line x1="0" y1="450" x2="1600" y2="450"/><line x1="0" y1="600" x2="1600" y2="600"/>
+      <line x1="0" y1="750" x2="1600" y2="750"/>
+    </g>
+  </g>
+  <line x1="0" y1="792" x2="1600" y2="792" stroke="#dbe3e5" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- ========= FIGURE 1 ========= -->
+  <g>
+    <path d="M152 800 C152 700, 202 640, 260 640 C318 640, 368 700, 368 800 Z" fill="url(#figG)"/>
+    <circle cx="260" cy="562" r="54" fill="url(#figG)"/>
+    <g stroke="#dbe3e5" stroke-opacity="0.28" stroke-width="1.5" fill="none">
+      <path d="M182 494 L182 478 L198 478"/><path d="M322 478 L338 478 L338 494"/>
+      <path d="M182 646 L182 662 L198 662"/><path d="M322 662 L338 662 L338 646"/>
+    </g>
+    <g class="ui" filter="url(#glowW)">
+      <rect x="300" y="430" width="126" height="52" rx="26" fill="#0d1114" fill-opacity="0.55" stroke="#dbe3e5" stroke-opacity="0.5"/>
+      <use href="#star" x="330" y="456" fill="#dbe3e5" fill-opacity="0.85"/>
+      <text class="num" x="348" y="465" fill="#dbe3e5">4.8</text>
+    </g>
+    <text class="mn nm" x="260" y="852" text-anchor="middle" fill="#7f8a90">NAOMI</text>
+  </g>
+
+  <!-- ========= FIGURE 2 ========= -->
+  <g>
+    <path d="M512 800 C512 704, 560 646, 616 646 C672 646, 720 704, 720 800 Z" fill="url(#figG)"/>
+    <circle cx="616" cy="572" r="50" fill="url(#figG)"/>
+    <g stroke="#dbe3e5" stroke-opacity="0.28" stroke-width="1.5" fill="none">
+      <path d="M544 510 L544 494 L560 494"/><path d="M672 494 L688 494 L688 510"/>
+      <path d="M544 650 L544 666 L560 666"/><path d="M672 666 L688 666 L688 650"/>
+    </g>
+    <g class="ui" filter="url(#glowW)">
+      <rect x="654" y="448" width="126" height="52" rx="26" fill="#0d1114" fill-opacity="0.55" stroke="#dbe3e5" stroke-opacity="0.45"/>
+      <use href="#star" x="684" y="474" fill="#dbe3e5" fill-opacity="0.8"/>
+      <text class="num" x="702" y="483" fill="#dbe3e5">4.6</text>
+    </g>
+    <text class="mn nm" x="616" y="852" text-anchor="middle" fill="#7f8a90">TOMAS</text>
+  </g>
+
+  <!-- ========= FIGURE 3 ========= -->
+  <g>
+    <path d="M876 800 C876 700, 926 640, 984 640 C1042 640, 1092 700, 1092 800 Z" fill="url(#figG)"/>
+    <circle cx="984" cy="562" r="54" fill="url(#figG)"/>
+    <g stroke="#dbe3e5" stroke-opacity="0.28" stroke-width="1.5" fill="none">
+      <path d="M906 494 L906 478 L922 478"/><path d="M1046 478 L1062 478 L1062 494"/>
+      <path d="M906 646 L906 662 L922 662"/><path d="M1046 662 L1062 662 L1062 646"/>
+    </g>
+    <g class="ui" filter="url(#glowW)">
+      <rect x="1024" y="430" width="126" height="52" rx="26" fill="#0d1114" fill-opacity="0.55" stroke="#dbe3e5" stroke-opacity="0.5"/>
+      <use href="#star" x="1054" y="456" fill="#dbe3e5" fill-opacity="0.85"/>
+      <text class="num" x="1072" y="465" fill="#dbe3e5">4.2</text>
+    </g>
+    <text class="mn nm" x="984" y="852" text-anchor="middle" fill="#7f8a90">PRIYA</text>
+  </g>
+
+  <!-- ========= FIGURE 4 - THE NOSEDIVE ========= -->
+  <g>
+    <path d="M1240 800 C1240 704, 1288 646, 1344 646 C1400 646, 1448 704, 1448 800 Z" fill="url(#figDim)"/>
+    <circle cx="1344" cy="572" r="50" fill="url(#figDim)"/>
+    <g stroke="#c4626b" stroke-opacity="0.45" stroke-width="1.5" fill="none">
+      <path d="M1272 510 L1272 494 L1288 494"/><path d="M1400 494 L1416 494 L1416 510"/>
+      <path d="M1272 650 L1272 666 L1288 666"/><path d="M1400 666 L1416 666 L1416 650"/>
+    </g>
+    <path d="M1290 392 L1330 404 L1362 424 L1400 452" stroke="#c4626b" stroke-opacity="0.5" stroke-width="1.5" fill="none" stroke-dasharray="3 5"/>
+    <g class="ui" filter="url(#glowR)">
+      <rect x="1382" y="448" width="140" height="52" rx="26" fill="#1a0f11" fill-opacity="0.7" stroke="#c4626b" stroke-opacity="0.9"/>
+      <use href="#star" x="1410" y="474" fill="#c4626b"/>
+      <text class="num" x="1428" y="483" fill="#e08a90">2.6</text>
+      <path d="M1496 468 L1496 482 M1491 477 L1496 483 L1501 477" stroke="#c4626b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="mn nm" x="1344" y="852" text-anchor="middle" fill="#c4626b" fill-opacity="0.75">LACIE</text>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#vig)"/>
+</svg>

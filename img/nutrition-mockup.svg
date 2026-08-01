@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Three phone screens showing the Nutrition Support Assistant conversation: intake, chunked recommendation, and refinement with memory confirmation.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#f7f7f5"/>
+      <stop offset="100%" stop-color="#e4e8e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-20%" width="160%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#14181a" flood-opacity="0.22"/>
+    </filter>
+    <style>
+      .ui   { font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; }
+      .mn   { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; }
+      .msg  { font-size: 14.5px; fill: #333a3d; }
+      .umsg { font-size: 14.5px; fill: #fdfdfc; }
+      .chip { font-size: 13px; fill: #1e3d44; font-weight: 500; }
+      .lbl  { font-size: 10.5px; fill: #2f5a63; letter-spacing: 1.4px; }
+      .ttl  { font-size: 15.5px; fill: #14181a; font-weight: 600; }
+      .sub  { font-size: 10.5px; fill: #8f979b; letter-spacing: 1.1px; }
+      .time { font-size: 12.5px; fill: #8f979b; font-weight: 600; }
+      .item { font-size: 13.5px; fill: #333a3d; }
+      .dish { font-size: 16.5px; fill: #14181a; font-weight: 600; }
+      .ph   { font-size: 13px; fill: #949b9f; }
+      .cap  { font-size: 12px; fill: #5f676b; letter-spacing: 1.5px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- ============ PHONE 1 - INTAKE ============ -->
+  <g class="ui">
+    <rect x="80" y="95" width="400" height="810" rx="48" fill="#14181a" filter="url(#shadow)"/>
+    <rect x="94" y="109" width="372" height="782" rx="36" fill="#fdfdfc"/>
+
+    <text class="time" x="116" y="152">9:41</text>
+    <rect x="410" y="143" width="16" height="9" rx="2" fill="#cacbc4"/>
+    <rect x="432" y="140" width="12" height="12" rx="2" fill="#cacbc4"/>
+    <line x1="94" y1="176" x2="466" y2="176" stroke="#e1e2dc" stroke-width="1"/>
+
+    <text class="ttl" x="116" y="206">Nutrition Assistant</text>
+    <text class="mn sub" x="116" y="226">PHASE 1 · INTAKE</text>
+    <line x1="94" y1="246" x2="466" y2="246" stroke="#e1e2dc" stroke-width="1"/>
+
+    <rect x="116" y="280" width="236" height="66" rx="18" fill="#eeefeb"/>
+    <text class="msg" x="136" y="310">Long day? Tell me what</text>
+    <text class="msg" x="136" y="331">you&#8217;re going for tonight.</text>
+
+    <rect x="116" y="364" width="118" height="36" rx="18" fill="#2f5a63" fill-opacity="0.07" stroke="#2f5a63" stroke-opacity="0.45"/>
+    <text class="chip" x="175" y="387" text-anchor="middle">High protein</text>
+    <rect x="244" y="364" width="104" height="36" rx="18" fill="#2f5a63" fill-opacity="0.07" stroke="#2f5a63" stroke-opacity="0.45"/>
+    <text class="chip" x="296" y="387" text-anchor="middle">Balanced</text>
+
+    <rect x="324" y="424" width="120" height="42" rx="18" fill="#2f5a63"/>
+    <text class="umsg" x="384" y="451" text-anchor="middle">High protein</text>
+
+    <rect x="116" y="488" width="228" height="66" rx="18" fill="#eeefeb"/>
+    <text class="msg" x="136" y="518">How much time do you</text>
+    <text class="msg" x="136" y="539">have tonight?</text>
+
+    <rect x="116" y="572" width="118" height="36" rx="18" fill="#2f5a63" fill-opacity="0.07" stroke="#2f5a63" stroke-opacity="0.45"/>
+    <text class="chip" x="175" y="595" text-anchor="middle">Under 15 min</text>
+    <rect x="244" y="572" width="104" height="36" rx="18" fill="#2f5a63" fill-opacity="0.07" stroke="#2f5a63" stroke-opacity="0.45"/>
+    <text class="chip" x="296" y="595" text-anchor="middle">30 minutes</text>
+
+    <rect x="332" y="632" width="112" height="42" rx="18" fill="#2f5a63"/>
+    <text class="umsg" x="388" y="659" text-anchor="middle">Under 15 min</text>
+
+    <rect x="116" y="696" width="244" height="66" rx="18" fill="#eeefeb"/>
+    <text class="msg" x="136" y="726">Perfect. Here&#8217;s the first</text>
+    <text class="msg" x="136" y="747">option that fits.</text>
+
+    <rect x="116" y="822" width="328" height="46" rx="23" fill="#f2f3ef" stroke="#e1e2dc"/>
+    <text class="ph" x="136" y="850">Message</text>
+    <circle cx="421" cy="845" r="16" fill="#2f5a63"/>
+    <path d="M415 845 L427 845 M422 840 L427 845 L422 850" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text class="mn cap" x="280" y="952" text-anchor="middle">01 · INTAKE</text>
+  </g>
+
+  <!-- ============ PHONE 2 - CHUNKED RECOMMENDATION ============ -->
+  <g class="ui">
+    <rect x="600" y="95" width="400" height="810" rx="48" fill="#14181a" filter="url(#shadow)"/>
+    <rect x="614" y="109" width="372" height="782" rx="36" fill="#fdfdfc"/>
+
+    <text class="time" x="636" y="152">9:43</text>
+    <rect x="930" y="143" width="16" height="9" rx="2" fill="#cacbc4"/>
+    <rect x="952" y="140" width="12" height="12" rx="2" fill="#cacbc4"/>
+    <line x1="614" y1="176" x2="986" y2="176" stroke="#e1e2dc" stroke-width="1"/>
+
+    <text class="ttl" x="636" y="206">Nutrition Assistant</text>
+    <text class="mn sub" x="636" y="226">PHASE 2 · ONE OPTION AT A TIME</text>
+    <line x1="614" y1="246" x2="986" y2="246" stroke="#e1e2dc" stroke-width="1"/>
+
+    <rect x="636" y="280" width="300" height="176" rx="20" fill="#f2f3ef" stroke="#e1e2dc"/>
+    <text class="mn lbl" x="656" y="312">OPTION 1</text>
+    <text class="dish" x="656" y="340">Turkey rice bowl</text>
+    <line x1="656" y1="358" x2="916" y2="358" stroke="#d8dad3" stroke-width="1"/>
+    <circle cx="664" cy="384" r="4" fill="#2f5a63"/>
+    <text class="item" x="680" y="389">2-3 palms turkey</text>
+    <circle cx="664" cy="414" r="4" fill="#2f5a63"/>
+    <text class="item" x="680" y="419">1 fist rice, 1 thumb oil</text>
+    <circle cx="664" cy="444" r="4" fill="#2f5a63"/>
+    <text class="item" x="680" y="449">About 45g protein</text>
+
+    <rect x="636" y="474" width="214" height="44" rx="18" fill="#eeefeb"/>
+    <text class="msg" x="656" y="502">Hear the next option?</text>
+
+    <rect x="636" y="534" width="76" height="36" rx="18" fill="#2f5a63" fill-opacity="0.07" stroke="#2f5a63" stroke-opacity="0.45"/>
+    <text class="chip" x="674" y="557" text-anchor="middle">Yes</text>
+    <rect x="722" y="534" width="140" height="36" rx="18" fill="#2f5a63" fill-opacity="0.07" stroke="#2f5a63" stroke-opacity="0.45"/>
+    <text class="chip" x="792" y="557" text-anchor="middle">No, this works</text>
+
+    <rect x="824" y="594" width="140" height="42" rx="18" fill="#2f5a63"/>
+    <text class="umsg" x="894" y="621" text-anchor="middle">No, this works</text>
+
+    <rect x="636" y="656" width="246" height="66" rx="18" fill="#eeefeb"/>
+    <text class="msg" x="656" y="686">Great. Want me to adjust</text>
+    <text class="msg" x="656" y="707">anything about it?</text>
+
+    <rect x="636" y="822" width="328" height="46" rx="23" fill="#f2f3ef" stroke="#e1e2dc"/>
+    <text class="ph" x="656" y="850">Message</text>
+    <circle cx="941" cy="845" r="16" fill="#2f5a63"/>
+    <path d="M935 845 L947 845 M942 840 L947 845 L942 850" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text class="mn cap" x="800" y="952" text-anchor="middle">02 · CHUNKED RECOMMENDATION</text>
+  </g>
+
+  <!-- ============ PHONE 3 - REFINEMENT & MEMORY ============ -->
+  <g class="ui">
+    <rect x="1120" y="95" width="400" height="810" rx="48" fill="#14181a" filter="url(#shadow)"/>
+    <rect x="1134" y="109" width="372" height="782" rx="36" fill="#fdfdfc"/>
+
+    <text class="time" x="1156" y="152">9:46</text>
+    <rect x="1450" y="143" width="16" height="9" rx="2" fill="#cacbc4"/>
+    <rect x="1472" y="140" width="12" height="12" rx="2" fill="#cacbc4"/>
+    <line x1="1134" y1="176" x2="1506" y2="176" stroke="#e1e2dc" stroke-width="1"/>
+
+    <text class="ttl" x="1156" y="206">Nutrition Assistant</text>
+    <text class="mn sub" x="1156" y="226">PHASE 2 · REFINEMENT</text>
+    <line x1="1134" y1="246" x2="1506" y2="246" stroke="#e1e2dc" stroke-width="1"/>
+
+    <rect x="1328" y="280" width="156" height="42" rx="18" fill="#2f5a63"/>
+    <text class="umsg" x="1406" y="307" text-anchor="middle">no eggs, no dairy</text>
+
+    <rect x="1156" y="340" width="300" height="98" rx="18" fill="#2f5a63" fill-opacity="0.09" stroke="#2f5a63" stroke-opacity="0.35"/>
+    <circle cx="1180" cy="372" r="10" fill="none" stroke="#2f5a63" stroke-width="1.6"/>
+    <path d="M1176 372 L1179 375.5 L1185 368.5" stroke="#2f5a63" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="msg" x="1200" y="370">Got it. I&#8217;ve saved</text>
+    <text class="msg" x="1200" y="391">&#8220;no eggs&#8221; and &#8220;no dairy&#8221;</text>
+    <text class="msg" x="1200" y="412">to your preferences.</text>
+
+    <rect x="1156" y="456" width="300" height="176" rx="20" fill="#f2f3ef" stroke="#e1e2dc"/>
+    <text class="mn lbl" x="1176" y="488">REVISED · OPTION A</text>
+    <text class="dish" x="1176" y="516">Chicken &amp; bean stir-fry</text>
+    <line x1="1176" y1="534" x2="1436" y2="534" stroke="#d8dad3" stroke-width="1"/>
+    <circle cx="1184" cy="560" r="4" fill="#2f5a63"/>
+    <text class="item" x="1200" y="565">2-3 palms chicken</text>
+    <circle cx="1184" cy="590" r="4" fill="#2f5a63"/>
+    <text class="item" x="1200" y="595">1 fist beans</text>
+    <circle cx="1184" cy="620" r="4" fill="#2f5a63"/>
+    <text class="item" x="1200" y="625">40-60g protein, dairy-free</text>
+
+    <rect x="1156" y="650" width="222" height="44" rx="18" fill="#eeefeb"/>
+    <text class="msg" x="1176" y="678">Tell me how it went.</text>
+
+    <rect x="1156" y="822" width="328" height="46" rx="23" fill="#f2f3ef" stroke="#e1e2dc"/>
+    <text class="ph" x="1176" y="850">Message</text>
+    <circle cx="1461" cy="845" r="16" fill="#2f5a63"/>
+    <path d="M1455 845 L1467 845 M1462 840 L1467 845 L1462 850" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text class="mn cap" x="1320" y="952" text-anchor="middle">03 · REFINEMENT &amp; MEMORY</text>
+  </g>
+</svg>
