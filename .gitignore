@@ -1,0 +1,18 @@
+# Working files kept local to the machine.
+# These live in the project folder for convenience. They would add roughly
+# 78 MB to the repo, and the site never references them.
+
+exploring_with_ai.pdf
+exploring_with_ai.txt
+nutrition_report.pdf
+nutrition_report.txt
+poppler.zip
+
+# Original headshot. The published copy is img/portrait.png
+Headshot.png
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wind-Down Smart Glasses · Will Smith</title>
+<meta name="description" content="Prototyping AR smart glasses for sleep hygiene, from 10+10 sketches through Wizard-of-Oz testing to a cognitive walkthrough, using AI as a design critic.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233f4d73'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f7f7f5' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.mask>span{transform:none!important}</style></noscript>
+</head>
+<body data-accent="dusk">
+<div class="progress"></div>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Will <em>Smith</em></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <header class="cs-head">
+      <span class="kicker" data-reveal>Case Study 02 · Prototyping</span>
+      <h1 data-reveal="mask" style="--d:.06s">
+        <span class="mask"><span>Wind-Down</span></span>
+        <span class="mask" style="--d:.12s"><span><em>Smart Glasses</em></span></span>
+      </h1>
+      <p class="standfirst" data-reveal style="--d:.3s">
+        AR glasses that orchestrate the room around you, prototyped from paper
+        sketches to a tested interaction flow.
+      </p>
+    </header>
+  </div>
+
+  <div class="cs-hero-media cs-hero-media--tall" data-parallax data-reveal style="--d:.4s">
+    <img src="img/windown-breathwork.png" width="1536" height="1024"
+         alt="Two large glowing amber rings labelled IN float in a dark bedroom, with the caption four-seven-eight breath, round one of three.">
+  </div>
+
+  <div class="wrap">
+
+    <dl class="meta-bar" data-reveal>
+      <div><dt>Role</dt><dd>Prototyper &amp; interaction designer</dd></div>
+      <div><dt>Context</dt><dd>INFO-H 564, Interactive Prototyping · Spring 2026</dd></div>
+      <div><dt>Methods</dt><dd>10+10 sketching, storyboards, Wizard of Oz, cognitive walkthrough</dd></div>
+      <div><dt>Scope</dt><dd>Two-person team · 6 testers, 2 rounds</dd></div>
+    </dl>
+
+    <div class="overview overview--split">
+      <p data-reveal>
+        Most people know the rules of sleep hygiene and break them anyway.
+        Nothing in the room tells them the day is over.
+      </p>
+      <div class="sub" data-reveal style="--d:.12s">
+        <p>
+          Wind-Down detects an elevated heart rate past bedtime and runs a
+          gentle ritual: lights dim, the Hatch starts, worries get captured by
+          voice and filed for morning, pulsing rings pace a 4-7-8 breath, and a
+          morning recap closes the loop.
+        </p>
+        <p>
+          I led the cognitive offloading half of the concept, the voice capture,
+          the drawer metaphor, and the morning return, which became the spine of
+          the final flow. We built it across three fidelity stages, testing
+          hand-drawn cards held through empty sunglass frames, and used AI
+          deliberately at each stage.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats" data-stagger="90" data-reveal>
+      <div class="stat"><b>40</b><span>concepts sketched before choosing a direction</span></div>
+      <div class="stat"><b>3</b><span>fidelity stages, from paper to interactive</span></div>
+      <div class="stat"><b>6</b><span>testers across two Wizard-of-Oz rounds</span></div>
+      <div class="stat"><b>5/6</b><span>steps passed a structured cognitive walkthrough</span></div>
+    </div>
+
+    <!-- 01 PROBLEM -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">01</span><h2>Problem</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          Meet Jordan: a working professional whose nervous system is still in
+          work mode at 10pm. They scroll in bed, fall asleep with the TV on, and
+          wake up groggy. Their sleep tracker reports a poor score and offers no
+          path forward. Jordan knows the principles of sleep hygiene. Most
+          evenings unfold the same way regardless.
+        </p>
+        <p>
+          The framing that unlocked the project: this is a behavioral execution
+          problem. Telling Jordan to wind down is useless. Changing the
+          environment around Jordan, dimming the lights, starting the sound,
+          taking the worries out of their head and putting them somewhere safe,
+          is the actual intervention. AR glasses can deliver ambient prompts
+          without demanding attention, and IoT puts the burden of responding on
+          the room.
+        </p>
+      </div>
+
+      <blockquote class="pull" data-reveal>
+        <p>Sleep hygiene is a behavioral execution problem. The environment has to carry the ritual.</p>
+        <cite>Project problem statement</cite>
+      </blockquote>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/windown-iot-handoff.png" width="1536" height="1024" loading="lazy"
+             alt="An AR overlay in a dark bedroom reading All set for sleep, with checkmarks for lights dimming, Hatch starting, and phone silenced."></div>
+        <figcaption>The IoT handoff. Three confirmations, then the overlay shrinks away. Feedback that the environment has changed, without asking Jordan to manage it.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 02 PROCESS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">02</span><h2>Process</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          We started deliberately divergent. Each of us produced 10+10 ideation
+          sheets alone, ten broad concepts then ten pushing depth on a single
+          direction, before comparing anything. My partner explored breathwork
+          and nervous-system regulation. I took pre-sleep cognitive offloading:
+          how you get tomorrow's worries out of someone's head at the moment
+          they're keeping them awake. Then we each storyboarded three vantages,
+          the current state, the future state, and what happens when something
+          breaks.
+        </p>
+        <p>
+          We fed photographs of all of it to an AI with one instruction: read
+          these as a design critic. It surfaced the gap neither sheet had
+          bridged. No handoff existed between offloading your worries and
+          starting to breathe. That critique produced the six-beat scenario the
+          rest of the project was built on: detection, IoT handoff, cognitive
+          offload, breathwork, calm detected, morning recap.
+        </p>
+      </div>
+
+      <div class="fig-pair" data-reveal>
+        <figure class="fig">
+          <div class="frame"><img src="img/windown-sketch-will.png" width="1085" height="660" loading="lazy"
+               alt="A hand-drawn sheet of ten wind-down concepts including lens dimming, a caffeine half-life overlay, a spoken checklist, and a sleeping cat companion."></div>
+          <figcaption>Ten broad concepts, including the ones that didn't survive, like the ambient cat that grows tired alongside you.</figcaption>
+        </figure>
+        <figure class="fig">
+          <div class="frame"><img src="img/windown-storyboard-will.png" width="723" height="541" loading="lazy"
+               alt="A hand-drawn six-panel storyboard showing the current state: a person in bed with racing thoughts, scrolling to distract themselves, and finally falling asleep at 1am."></div>
+          <figcaption>Current-state storyboard. Establishing the pain honestly before designing anything against it.</figcaption>
+        </figure>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/windown-woz-kit.png" width="1830" height="1530" loading="lazy"
+             alt="Thirteen hand-drawn AR overlay cards spread on a wooden table around a pair of glasses with the lenses removed."></div>
+        <figcaption>The entire mid-fidelity prototype: thirteen hand-drawn overlay cards and a pair of sunglasses with the lenses popped out. The facilitator slid cards through the empty frame on cue while playing the AI and IoT responses.</figcaption>
+      </figure>
+
+      <div class="prose" data-reveal>
+        <p>
+          Three Wizard-of-Oz sessions produced four prioritized findings: no
+          action cue on the first card, unclear IN/OUT breathing labels, no way
+          to exit mid-session, and ambiguous offload prompting. Each mapped to a
+          specific change: a mic icon with &#8220;Swipe to exit anytime,&#8221; large
+          single-word breath cards, and an empty state that prompts speech.
+        </p>
+        <p>
+          We then redrew the problem cards independently, without coordinating,
+          and arrived at the same three solutions. That convergence was the
+          signal the moves were intuitive.
+        </p>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/windown-redraw-will.png" width="1590" height="1530" loading="lazy"
+             alt="Redrawn prototype cards: a wind-down card with a microphone icon and swipe-to-exit label, large IN and OUT breathing circles, and an Anything on your mind card."></div>
+        <figcaption>My hi-fi redraw. A mic icon signalling voice input, an explicit exit affordance, and breath cues large enough to read as immersive.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 03 FINDINGS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">03</span><h2>Findings</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          The second round validated the core interaction. Voice-first capture
+          removed the friction of typing in bed. One tester's summary was &#8220;very
+          seamless, I didn't have to click any buttons.&#8221; The drawer metaphor for
+          offloaded worries read instantly: the worries land somewhere, out of
+          your head and into a container. And testers immediately connected the morning
+          recap's task list to the worries they'd spoken the night before. The
+          loop closed visibly, which was the whole point.
+        </p>
+      </div>
+
+      <div class="fig-pair" data-reveal>
+        <figure class="fig">
+          <div class="frame"><img src="img/windown-offload.png" width="1536" height="1024" loading="lazy"
+               alt="An AR overlay asking Anything on your mind, with three glowing cards reading email Sarah tomorrow, laundry, and don't forget dentist, filing down into a drawer labelled Saved for morning."></div>
+          <figcaption>Cognitive offload. Spoken worries become cards, and the cards go into a drawer, a metaphor testers understood without explanation.</figcaption>
+        </figure>
+        <figure class="fig">
+          <div class="frame"><img src="img/windown-morning.png" width="1536" height="1024" loading="lazy"
+               alt="A morning AR overlay in a sunlit bedroom reading Good morning Jordan, sleep score 84, wind-down 9:30pm next time, with the three tasks from the previous night listed as ready for today."></div>
+          <figcaption>The morning recap returns exactly what was filed the night before, the beat that made the whole ritual cohere as a system.</figcaption>
+        </figure>
+      </div>
+
+      <div class="prose" data-reveal>
+        <p>
+          A structured cognitive walkthrough, asking the four standard questions
+          at every step, passed five of six steps and failed one honestly.
+          Breathwork had no timing signal between the IN, HOLD, and OUT phases,
+          so a user couldn't tell whether they were keeping pace. That failure
+          confirmed what user testing had already suggested: the Wizard simply
+          couldn't replicate breath timing, and a production version needs a
+          paced audio or visual count.
+        </p>
+        <p>
+          The project doubled as an experiment in AI-assisted prototyping, and
+          the lessons were specific. AI worked best as a second pass.
+          Hand-sketching produced our most original ideas, and AI earned its
+          place at critique and gap-finding. AI image generation needed tight
+          direction: the amber-on-dim aesthetic only emerged once we specified
+          it explicitly in every prompt, and consistency took several attempts
+          per overlay.
+        </p>
+      </div>
+
+      <blockquote class="pull pull--wide" data-reveal>
+        <p>Hand-drawn cards held through empty sunglass frames produced honest feedback, because users were responding to the system logic itself.</p>
+        <cite>Lessons learned · Stage 4</cite>
+      </blockquote>
+    </section>
+
+    <!-- 04 REFLECTION -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">04</span><h2>Reflection</h2><span class="rule"></span>
+      </div>
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/windown-calm.png" width="1536" height="1024" loading="lazy"
+             alt="A soft AR overlay reading Calm detected, sleep ready, with a flattening heart-rate trace, in a dim bedroom."></div>
+        <figcaption>Calm detected. The confirmation that the session worked, and the moment the interface gets out of the way.</figcaption>
+      </figure>
+      <div class="prose" data-reveal>
+        <p>
+          If we redid this tomorrow we'd converge earlier. Working in parallel
+          for as long as we did cost us roughly a week, and the AI critique that
+          merged our directions could have happened at the halfway point. We'd
+          also pilot with a single tester before scaling to three. Two of our
+          four first-round findings came down to problems in the script itself,
+          and one pilot would have caught them.
+        </p>
+        <p>
+          The next iteration has a clear backlog from testing: a &#8220;+&#8221; affordance
+          during offload so users know they can keep going, &#8220;Saved for Morning&#8221;
+          as its own confirmation beat, replacing HRV jargon with plain
+          &#8220;resting heart rate,&#8221; a personalized baseline captured during
+          onboarding, and real Hatch and smart-bulb APIs in place of the Wizard.
+        </p>
+        <p>
+          What I carry forward is a conviction about fidelity: test the logic
+          before the polish, and let the cheap prototype earn the expensive one.
+          Every finding that mattered here came from paper.
+        </p>
+      </div>
+    </section>
+
+    <nav class="cs-next" data-reveal aria-label="Next case study">
+      <a href="effortcircles.html">
+        <span class="title">EffortCircles</span>
+        <span class="dir">Next · Product Design →</span>
+      </a>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Will Smith · designed and built by hand.</p>
+    <ul class="footer-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:willsmith8418@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/willsmith8418/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

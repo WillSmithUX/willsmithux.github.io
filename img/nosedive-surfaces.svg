@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" width="1600" height="720" role="img" aria-label="Diagram of the three integrated surfaces of the Nosedive rating system: an always-on AR overlay, a companion app showing the user's own score, and a backend that gates real-world access behind rating thresholds.">
+  <defs>
+    <linearGradient id="sBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1e252a"/><stop offset="100%" stop-color="#121719"/>
+    </linearGradient>
+    <style>
+      .mn { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; }
+      .ui { font-family: Inter, 'Segoe UI', -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+      .num  { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; font-size: 11px; letter-spacing: 2px; fill: #7f8a90; }
+      .ttl  { font-size: 21px; font-weight: 600; fill: #e7eef0; }
+      .desc { font-size: 13.5px; fill: #96a2a8; }
+      .tag  { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; font-size: 10.5px; letter-spacing: 1.6px; fill: #c4626b; }
+      .sc   { font-size: 20px; font-weight: 600; fill: #dbe3e5; }
+      .sm   { font-size: 12px; fill: #96a2a8; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="720" fill="url(#sBg)"/>
+  <text class="mn" x="80" y="72" font-size="11" letter-spacing="2.6" fill="#7f8a90">THREE INTEGRATED SURFACES</text>
+  <line x1="80" y1="96" x2="1520" y2="96" stroke="#dbe3e5" stroke-opacity="0.12"/>
+
+  <!-- ============ 1. AR OVERLAY ============ -->
+  <g>
+    <rect x="80" y="140" width="440" height="360" rx="8" fill="#dbe3e5" fill-opacity="0.03" stroke="#dbe3e5" stroke-opacity="0.14"/>
+    <text class="num" x="112" y="180">01</text>
+    <!-- face with bracket + pill -->
+    <g transform="translate(112,210)">
+      <path d="M60 190 C60 150, 84 126, 112 126 C140 126, 164 150, 164 190 Z" fill="#3d4a52"/>
+      <circle cx="112" cy="96" r="30" fill="#3d4a52"/>
+      <g stroke="#dbe3e5" stroke-opacity="0.3" stroke-width="1.4" fill="none">
+        <path d="M62 62 L62 52 L72 52"/><path d="M152 52 L162 52 L162 62"/>
+        <path d="M62 158 L62 168 L72 168"/><path d="M152 168 L162 168 L162 158"/>
+      </g>
+      <rect x="176" y="60" width="96" height="40" rx="20" fill="#0d1114" fill-opacity="0.6" stroke="#dbe3e5" stroke-opacity="0.45"/>
+      <text class="ui sc" x="200" y="87">4.6</text>
+      <path d="M190,74 L191.5,77 L194.8,77.5 L192.4,79.8 L193,83 L190,81.5 L187,83 L187.6,79.8 L185.2,77.5 L188.5,77 Z" fill="#dbe3e5" fill-opacity="0.85"/>
+    </g>
+    <text class="ui ttl" x="112" y="446">Always-on AR overlay</text>
+    <text class="ui desc" x="112" y="474">A rating floats beside every face you look at.</text>
+    <text class="tag" x="112" y="530">VIOLATES PRIVACY</text>
+  </g>
+
+  <!-- ============ 2. COMPANION APP ============ -->
+  <g>
+    <rect x="580" y="140" width="440" height="360" rx="8" fill="#dbe3e5" fill-opacity="0.03" stroke="#dbe3e5" stroke-opacity="0.14"/>
+    <text class="num" x="612" y="180">02</text>
+    <g transform="translate(612,206)">
+      <rect x="66" y="0" width="140" height="200" rx="18" fill="#0d1114" stroke="#dbe3e5" stroke-opacity="0.22"/>
+      <text class="ui" x="136" y="52" text-anchor="middle" font-size="30" font-weight="600" fill="#dbe3e5">4.2</text>
+      <line x1="86" y1="70" x2="186" y2="70" stroke="#dbe3e5" stroke-opacity="0.16"/>
+      <g fill="#dbe3e5" fill-opacity="0.3">
+        <rect x="86" y="86" width="100" height="7" rx="3.5"/>
+        <rect x="86" y="104" width="78" height="7" rx="3.5"/>
+        <rect x="86" y="122" width="92" height="7" rx="3.5"/>
+        <rect x="86" y="140" width="64" height="7" rx="3.5"/>
+        <rect x="86" y="158" width="86" height="7" rx="3.5"/>
+      </g>
+    </g>
+    <text class="ui ttl" x="612" y="446">Companion app</text>
+    <text class="ui desc" x="612" y="474">Your own score, and a live feed of who rated you.</text>
+    <text class="tag" x="612" y="530">VIOLATES PSYCHOLOGICAL WELL-BEING</text>
+  </g>
+
+  <!-- ============ 3. ACCESS BACKEND ============ -->
+  <g>
+    <rect x="1080" y="140" width="440" height="360" rx="8" fill="#dbe3e5" fill-opacity="0.03" stroke="#dbe3e5" stroke-opacity="0.14"/>
+    <text class="num" x="1112" y="180">03</text>
+    <g transform="translate(1112,214)">
+      <!-- threshold gate -->
+      <line x1="20" y1="150" x2="270" y2="150" stroke="#c4626b" stroke-opacity="0.7" stroke-width="1.6" stroke-dasharray="5 5"/>
+      <text class="mn" x="20" y="140" font-size="10" letter-spacing="1.4" fill="#c4626b">THRESHOLD 4.5</text>
+      <g class="ui">
+        <text class="sm" x="20" y="42" fill="#96a2a8">Housing</text>
+        <rect x="196" y="30" width="74" height="18" rx="9" fill="#dbe3e5" fill-opacity="0.1"/>
+        <text class="mn" x="233" y="43" font-size="9.5" letter-spacing="1.2" fill="#96a2a8" text-anchor="middle">GATED</text>
+        <text class="sm" x="20" y="78" fill="#96a2a8">Air travel</text>
+        <rect x="196" y="66" width="74" height="18" rx="9" fill="#dbe3e5" fill-opacity="0.1"/>
+        <text class="mn" x="233" y="79" font-size="9.5" letter-spacing="1.2" fill="#96a2a8" text-anchor="middle">GATED</text>
+        <text class="sm" x="20" y="114" fill="#96a2a8">Rental cars</text>
+        <rect x="196" y="102" width="74" height="18" rx="9" fill="#dbe3e5" fill-opacity="0.1"/>
+        <text class="mn" x="233" y="115" font-size="9.5" letter-spacing="1.2" fill="#96a2a8" text-anchor="middle">GATED</text>
+        <text class="sm" x="20" y="186" fill="#c4626b">Opting out</text>
+        <rect x="176" y="174" width="94" height="18" rx="9" fill="#c4626b" fill-opacity="0.18"/>
+        <text class="mn" x="223" y="187" font-size="9.5" letter-spacing="1.2" fill="#e08a90" text-anchor="middle">CIVIC DEATH</text>
+      </g>
+    </g>
+    <text class="ui ttl" x="1112" y="446">Access backend</text>
+    <text class="ui desc" x="1112" y="474">The score decides where you may live and travel.</text>
+    <text class="tag" x="1112" y="530">VIOLATES AUTONOMY</text>
+  </g>
+
+  <line x1="80" y1="600" x2="1520" y2="600" stroke="#dbe3e5" stroke-opacity="0.12"/>
+  <text class="ui" x="80" y="644" font-size="15" fill="#96a2a8">Each surface is defensible alone. Wired together, they make the score the only currency that matters.</text>
+</svg>

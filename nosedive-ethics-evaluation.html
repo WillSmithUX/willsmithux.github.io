@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosedive Ethics Evaluation · Will Smith</title>
+<meta name="description" content="A value-sensitive design evaluation of the social rating system in Black Mirror's Nosedive, applying Friedman and Kahn, Turkle, and Proctor and Van Zandt to a fictional interface built from real patterns.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238f3a42'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f7f7f5' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.mask>span{transform:none!important}</style></noscript>
+</head>
+<body data-accent="oxblood">
+<div class="progress"></div>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Will <em>Smith</em></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <header class="cs-head">
+      <span class="kicker" data-reveal>Case Study 04 · Critical Analysis</span>
+      <h1 data-reveal="mask" style="--d:.06s">
+        <span class="mask"><span>The Social</span></span>
+        <span class="mask" style="--d:.12s"><span>Rating System</span></span>
+      </h1>
+      <p class="standfirst" data-reveal style="--d:.3s">
+        A UX ethics evaluation of Black Mirror's most prescient interface, built
+        entirely from patterns that ship in real products today.
+      </p>
+    </header>
+  </div>
+
+  <div class="cs-hero-media" data-reveal style="--d:.4s">
+    <img src="img/nosedive-overlay.svg" width="1600" height="900"
+         alt="Original illustration: four abstract figures viewed through an augmented-reality overlay, each tagged with a live star rating. The fourth figure's score has fallen and is marked in red with a descending trace.">
+  </div>
+
+  <div class="wrap">
+
+    <dl class="meta-bar" data-reveal>
+      <div><dt>Role</dt><dd>Author &amp; analyst</dd></div>
+      <div><dt>Context</dt><dd>INFO-H 563, Psychology of HCI · Spring 2026</dd></div>
+      <div><dt>Frameworks</dt><dd>Friedman &amp; Kahn · Turkle · Proctor &amp; Van Zandt</dd></div>
+      <div><dt>Method</dt><dd>Close reading &amp; feature-to-value mapping</dd></div>
+    </dl>
+
+    <div class="overview overview--split">
+      <p data-reveal>
+        Every interface carries values, whether the designer chooses them or
+        not.
+      </p>
+      <div class="sub" data-reveal style="--d:.12s">
+        <p>
+          In &#8220;Nosedive,&#8221; a smartphone app quietly restructures society. Everyone
+          carries a score between zero and five, assembled from the ratings
+          strangers give them after each brief interaction. The number decides
+          where they can live, who returns their calls, and whether they board
+          their flight.
+        </p>
+        <p>
+          The system is built from thoroughly ordinary consumer-app patterns:
+          pastel icons, smooth taps, a friendly five-star control. This
+          evaluation maps those features against ethical frameworks HCI has been
+          articulating for thirty years, and argues that the damage comes from
+          decisions teams make casually, every day.
+        </p>
+      </div>
+    </div>
+
+    <!-- 01 THE INTERFACE -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">01</span><h2>The Interface</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          The system has three integrated surfaces. An augmented-reality overlay
+          floats a 0 to 5 rating beside anyone the user looks at. A companion
+          app shows the user's own aggregate score and a running feed of recent
+          ratings. A backend gates real-world access, housing and airline
+          tickets and rental cars and wedding invitations, behind rating
+          thresholds. Opting out carries penalties steep enough to function as
+          civic death.
+        </p>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/nosedive-surfaces.svg" width="1600" height="720" loading="lazy"
+             alt="Diagram of the three surfaces: an always-on AR overlay showing a 4.6 beside a face, a companion app showing the user's own 4.2 and a rating feed, and an access backend gating housing, air travel, and rental cars behind a 4.5 threshold."></div>
+        <figcaption>Each surface maps to a different value violation. The overlay takes privacy, the app takes psychological well-being, the backend takes autonomy.</figcaption>
+      </figure>
+
+      <div class="callout" data-reveal>
+        <b>The argument in one line</b>
+        <p>
+          A five-star control is unremarkable on its own. Add score-gated access
+          and rater weighting, and the same control becomes an instrument of
+          social control. All three decisions would sail through a product
+          review.
+        </p>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/nosedive-compounding.svg" width="1600" height="620" loading="lazy"
+             alt="Three ordinary product decisions, a five-star control, public visibility, and reputation weighting, converge into a single outcome labelled an instrument of social control."></div>
+        <figcaption>The compounding is the whole analysis. A review process that evaluates features one at a time will approve every one of these.</figcaption>
+      </figure>
+
+      <blockquote class="pull pull--wide" data-reveal>
+        <p>Decisions that once belonged to human judgment get delegated to a tool, and the tool's output eventually becomes the decision.</p>
+        <cite>On the closed-loop problem, after Friedman &amp; Kahn</cite>
+      </blockquote>
+    </section>
+
+    <!-- 02 METHOD -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">02</span><h2>Method</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          The evaluation applies three complementary lenses. Friedman and Kahn's
+          value-sensitive design work supplies the catalogue of human values a
+          designer should actively consider: privacy, autonomy, informed
+          consent, freedom from bias, welfare, trust, accountability. Their
+          earlier work on human agency names the two mechanisms by which systems
+          distort it. Sherry Turkle's &#8220;at interface value&#8221; explains how people
+          come to relate to computational objects through appearances. Proctor
+          and Van Zandt's work on human information processing grounds the
+          cognitive costs.
+        </p>
+        <p>
+          The core analytical move is a systematic feature-to-value mapping:
+          seven concrete system features, each assessed against the value it
+          most directly implicates, with a stated mechanism. The verdict is
+          uniform.
+        </p>
+      </div>
+
+      <div class="table-scroll" data-reveal>
+        <table class="vtable">
+          <thead>
+            <tr><th scope="col">Feature</th><th scope="col">Value</th><th scope="col">Verdict</th><th scope="col">Mechanism</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Always-on AR score overlay</td><td>Privacy</td><td class="verdict">Violates</td><td>Ratings broadcast to every nearby user by default, with no control over who sees the score or its history.</td></tr>
+            <tr><td>Score-gated access to housing, travel, events</td><td>Autonomy</td><td class="verdict">Violates</td><td>Life decisions are constrained by aggregated peer opinion.</td></tr>
+            <tr><td>Mandatory participation, opaque algorithm</td><td>Informed consent</td><td class="verdict">Violates</td><td>Users cannot opt out, and the weighting logic is undisclosed, so consent fails on both counts.</td></tr>
+            <tr><td>Continuous public feedback on every interaction</td><td>Psychological well-being</td><td class="verdict">Violates</td><td>Chronic performance anxiety and emotional labour crowd out genuine affect.</td></tr>
+            <tr><td>Ratings weighted by the rater's own score</td><td>Freedom from bias</td><td class="verdict">Violates</td><td>Existing privilege becomes algorithmic leverage. Bias by construction.</td></tr>
+            <tr><td>Score-optimised smile prompts and social scripts</td><td>Authenticity</td><td class="verdict">Violates</td><td>The system rewards performed warmth, replacing connection with strategic display.</td></tr>
+            <tr><td>Algorithmic aggregation with no dispute mechanism</td><td>Human agency</td><td class="verdict">Violates</td><td>No recourse against unfair or retaliatory ratings, so moral authorship erodes.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 03 FINDINGS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">03</span><h2>Findings</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          The deepest harm is to agency. Friedman and Kahn describe two ways a
+          computational system distorts a person's sense of moral agency:
+          reducing the human to a mechanical role, and projecting agency onto
+          the system until users treat it as a moral actor. Nosedive does both
+          simultaneously. Lacie rehearses conversations in the mirror, laughs at
+          jokes she doesn't find funny, and compliments strangers' shoes to
+          raise her score. &#8220;Being a good person&#8221; has been converted into
+          &#8220;optimising for a number.&#8221; Meanwhile users speak about the rating as
+          though it has moods: it doesn't like me today, it's being generous.
+          They grant the algorithm exactly the moral standing they have lost.
+        </p>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/nosedive-trajectory.svg" width="1600" height="760" loading="lazy"
+             alt="Line chart of Lacie's rating across one day, falling from 4.2 through 3.1 at the airport, 2.6 after the truck ride, 1.4 at the wedding, and 0.6 when detained, crossing below the 4.5 access threshold early."></div>
+        <figcaption>The descent takes a single day, and each step down closes a door: the airport, the rental counter, the wedding. The interface offers no way to contest a single tap.</figcaption>
+      </figure>
+
+      <div class="prose" data-reveal>
+        <p>
+          Turkle's authenticity crisis becomes literal here. She wrote about
+          relational artifacts, robotic pets and chatbot companions, producing
+          the feeling of connection without the mutual recognition that gives
+          connection meaning. Nosedive extends that crisis to interactions
+          between humans. When every encounter is also a rating event, both
+          parties are simultaneously submitting a performance and scoring the
+          other's. The warmth is manufactured for the transaction.
+        </p>
+        <p>
+          And the cognitive costs are visible throughout. Attention splits
+          between the person and the number floating beside their face, and both
+          tasks degrade. Memory fills with strategic patterns, which behaviour
+          produced a 4.8, which coworker to avoid, displacing the relational
+          knowledge ordinary friendships are built from. Problem solving
+          collapses into optimisation of a single metric, and moral reasoning
+          atrophies alongside it. By the end, Lacie's internal question in any
+          interaction is <em>what will get me a high rating here</em>, and the
+          older question, what is the right thing to do, has fallen out of use.
+        </p>
+      </div>
+    </section>
+
+    <!-- 04 WHY IT MATTERS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">04</span><h2>Why It Matters</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          Nosedive works as UX criticism precisely because its components are
+          familiar to anyone who spends time online: five-star reviews, karma
+          points, follower counts, credit scores, gig-platform ratings. The
+          episode unifies those patterns into a single metric governing every
+          domain of life and lets the consequences play out. Every interaction
+          in it already exists somewhere.
+        </p>
+        <p>
+          The takeaway for practitioners is direct. A team that defaults to a
+          visible aggregate score, weights ratings by rater authority, or ties
+          access to a number is making ethical decisions that will affect real
+          people, whether or not anyone in the room frames it that way.
+          Friedman, Kahn, Turkle, and Proctor and Van Zandt provide the
+          vocabulary to surface those decisions consciously. Applying it at
+          design time, before the feature ships, is the practitioner's
+          responsibility.
+        </p>
+        <p>
+          Writing this changed how I work. The feature-to-value mapping is now
+          something I run informally on my own designs, and it is why
+          EffortCircles has no leaderboard, and why the nutrition assistant
+          shows ranges with no score to defend.
+        </p>
+      </div>
+
+      <div class="prose" data-reveal style="margin-top:2.5rem">
+        <p style="font-size:.8rem;color:var(--ink-4);line-height:1.6">
+          <strong style="color:var(--ink-3)">Sources.</strong>
+          Brooker, C. (Writer) &amp; Wright, J. (Director). (2016). <em>Nosedive</em> (Black Mirror, S3E1). Netflix. ·
+          Friedman, B., &amp; Kahn, P. H., Jr. (1992). Human agency and responsible computing. <em>Journal of Systems and Software, 17</em>(1), 7-14. ·
+          Friedman, B., &amp; Kahn, P. H., Jr. (2003). Human values, ethics, and design. In <em>The Human-Computer Interaction Handbook</em> (pp. 1177-1201). ·
+          Proctor, R. W., &amp; Van Zandt, T. (2008). <em>Human factors in simple and complex systems</em>. ·
+          Turkle, S. (2007). Authenticity in the age of digital companions. <em>Interaction Studies, 8</em>(3), 501-517.
+        </p>
+        <p style="font-size:.8rem;color:var(--ink-4);line-height:1.6;margin-top:1rem">
+          All illustrations on this page are original work created for this
+          portfolio. No footage or stills from the episode are reproduced here.
+          The trajectory chart is reconstructed from events in the episode.
+        </p>
+      </div>
+    </section>
+
+    <nav class="cs-next" data-reveal aria-label="Next case study">
+      <a href="nutrition-support-assistant.html">
+        <span class="title">Nutrition Support Assistant</span>
+        <span class="dir">Back to the start · Research →</span>
+      </a>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Will Smith · designed and built by hand.</p>
+    <ul class="footer-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:willsmith8418@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/willsmith8418/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

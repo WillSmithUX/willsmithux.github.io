@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EffortCircles · Will Smith</title>
+<meta name="description" content="EffortCircles: a journaling app built on gentle accountability, designed from seven user interviews and validated through usability testing.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2341613f'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f7f7f5' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.mask>span{transform:none!important}</style></noscript>
+</head>
+<body data-accent="forest">
+<div class="progress"></div>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Will <em>Smith</em></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <header class="cs-head">
+      <span class="kicker" data-reveal>Case Study 03 · Product Design</span>
+      <h1 data-reveal="mask" style="--d:.06s">
+        <span class="mask"><span>Effort<em>Circles</em></span></span>
+      </h1>
+      <p class="standfirst" data-reveal style="--d:.24s">
+        Designing for gentle accountability, for the people that
+        competition-driven apps quietly push out.
+      </p>
+    </header>
+  </div>
+
+  <div class="cs-hero-media" data-reveal style="--d:.34s">
+    <img src="img/effortcircles-mockup.svg" width="1600" height="1000"
+         alt="Three phone screens: writing a journal entry with energy and stress tags, choosing between the Inner and Outer Circle, and the Inner Circle feed showing three entries with no metrics or ranking.">
+  </div>
+
+  <div class="wrap">
+
+    <dl class="meta-bar" data-reveal>
+      <div><dt>Role</dt><dd>UX researcher &amp; interaction designer</dd></div>
+      <div><dt>Context</dt><dd>Indiana University · Fall 2025</dd></div>
+      <div><dt>Methods</dt><dd>User interviews, secondary research, usability testing</dd></div>
+      <div><dt>Scope</dt><dd>Team of four · 7 interviews, 4 usability sessions</dd></div>
+    </dl>
+
+    <div class="overview overview--split">
+      <p data-reveal>
+        People want accountability. What they don't want is an audience.
+      </p>
+      <div class="sub" data-reveal style="--d:.12s">
+        <p>
+          Apps like Strava and MyFitnessPal drive engagement through public
+          sharing and competition, and a large share of users eventually
+          disengage. Seven interviews told us why, consistently: health felt
+          personal, comparison felt corrosive, and the emotional context of a
+          workout mattered as much as the numbers.
+        </p>
+        <p>
+          EffortCircles answers with a two-tier social structure wrapped around
+          a journaling practice. Usability testing validated the core model and
+          caught a labelling problem we were all too close to the design to see.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats" data-stagger="90" data-reveal>
+      <div class="stat"><b>7</b><span>interview participants, ages 18 to 63</span></div>
+      <div class="stat"><b>3</b><span>research patterns that set the architecture</span></div>
+      <div class="stat"><b>100%</b><span>completed save-and-share once inside the flow</span></div>
+      <div class="stat"><b>75%</b><span>reached for the wrong tab to start writing</span></div>
+    </div>
+
+    <!-- 01 PROBLEM -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">01</span><h2>Problem</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          The dominant pattern in fitness apps assumes visibility motivates:
+          leaderboards, public feeds, streaks on display. For a meaningful share
+          of users the opposite is true. Comparison undermines the personal
+          progress it's meant to fuel, and the moment someone falls behind is
+          precisely when a public metric does the most damage.
+        </p>
+        <p>
+          So the design question became whether an app could deliver real
+          accountability while removing the audience that makes accountability
+          feel like performance.
+        </p>
+      </div>
+
+      <blockquote class="pull pull--wide" data-reveal>
+        <p>&#8220;I have always felt like exercising and losing weight is also a competition… at times I don't even enjoy it anymore because I think I am not good enough.&#8221;</p>
+        <cite>Interview participant</cite>
+      </blockquote>
+    </section>
+
+    <!-- 02 PROCESS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">02</span><h2>Process</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          We interviewed seven participants spanning a forty-five year age
+          range, alongside secondary research on app disengagement. Three
+          patterns organised everything that followed:
+        </p>
+        <ul>
+          <li><strong>Privacy preference.</strong> Participants rarely shared fitness publicly. Health was personal, full stop.</li>
+          <li><strong>Trusted accountability.</strong> Sharing felt safe only with small, chosen groups: a friend, a partner, a coach.</li>
+          <li><strong>Emotional context.</strong> Motivation, stress, and energy mattered as much as any metric, and no app was capturing them.</li>
+        </ul>
+        <p>
+          Those patterns became the architecture directly. An <strong>Inner
+          Circle</strong> for honest sharing with a handful of chosen people. An
+          <strong>Outer Circle</strong> for lower-pressure updates. A binary
+          Save-versus-Post action so the privacy decision is explicit rather
+          than buried in settings. Calm colour and minimal required inputs, so
+          journaling on a bad day costs almost nothing. And energy and stress as
+          first-class fields, because that's what participants said they were
+          actually tracking.
+        </p>
+        <p>
+          We wireframed in Balsamiq, built high-fidelity flows in Figma, then
+          ran four moderated usability sessions against the core tasks: write an
+          entry, save it privately, share it to a circle. My focus across the
+          team was the research synthesis and the interaction model for the
+          circles themselves.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03 FINDINGS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">03</span><h2>Findings</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          The heart of the design held up. Every participant successfully saved
+          and shared an entry once inside the flow, which told me the
+          Inner/Outer Circle model and the binary Save-versus-Post choice were
+          legible without explanation. Nobody hesitated over who would see what,
+          the thing I'd been most worried about.
+        </p>
+        <p>
+          The failure was at the front door. Three of four participants selected
+          <strong>Journal</strong> when asked to write an entry, even though
+          we'd put that action under <strong>Reflections</strong>. Users had
+          cleanly divided the space into writing (Journal) and reviewing
+          (Reflections), and our label violated that model. The fix was
+          consolidation: all
+          writing actions live under Journal, and Reflections becomes what users
+          already assumed it was, the archive.
+        </p>
+      </div>
+
+      <blockquote class="pull pull--wide" data-reveal>
+        <p>The design lever for accountability is control over who is watching.</p>
+        <cite>Synthesis · research patterns 1 to 3</cite>
+      </blockquote>
+
+      <div class="prose" data-reveal>
+        <p>
+          The broader insight is that emotional safety is structural. I could
+          have written warmer microcopy all day and it would have moved nothing.
+          What made participants willing to engage were architectural decisions:
+          who can see this, how deliberately I choose, and whether the system
+          asks me to compete with anyone. Those are information-architecture
+          problems wearing an emotional costume.
+        </p>
+      </div>
+    </section>
+
+    <!-- 04 REFLECTION -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">04</span><h2>Reflection</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          EffortCircles taught me to treat labels as testable hypotheses rather
+          than naming decisions. Journal versus Reflections was invisible from
+          inside our own mental model, obvious within four sessions, and a
+          reminder that the cheapest research usually catches the thing a team
+          is least able to see on its own.
+        </p>
+        <p>
+          It also sharpened the theme running through all of my work: behavior
+          change sticks when systems reduce pressure. The
+          honest limitation is that this was evaluated as a concept, in single
+          sessions. The claim that gentle accountability sustains engagement
+          past the point where competitive apps lose people is exactly the sort
+          of claim that needs a longitudinal study, and that's the version of
+          this project I'd want to run next.
+        </p>
+      </div>
+    </section>
+
+    <nav class="cs-next" data-reveal aria-label="Next case study">
+      <a href="nosedive-ethics-evaluation.html">
+        <span class="title">Nosedive Ethics Evaluation</span>
+        <span class="dir">Next · Critical Analysis →</span>
+      </a>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Will Smith · designed and built by hand.</p>
+    <ul class="footer-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:willsmith8418@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/willsmith8418/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

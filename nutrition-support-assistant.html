@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrition Support Assistant · Will Smith</title>
+<meta name="description" content="A Wizard-of-Oz evaluation of a conversational nutrition assistant for fatigued users: eleven participants, NASA-TLX cognitive load measurement, and an expertise split that reframed the design.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5a63'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f7f7f5' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.mask>span{transform:none!important}</style></noscript>
+</head>
+<body>
+<div class="progress"></div>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Will <em>Smith</em></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <header class="cs-head">
+      <span class="kicker" data-reveal>Case Study 01 · Research</span>
+      <h1 data-reveal="mask" style="--d:.06s">
+        <span class="mask"><span>Nutrition</span></span>
+        <span class="mask" style="--d:.12s"><span>Support Assistant</span></span>
+      </h1>
+      <p class="standfirst" data-reveal style="--d:.3s">
+        Can the right conversational structure reduce the cognitive load of
+        deciding what to eat, for someone too tired to think about it?
+      </p>
+    </header>
+  </div>
+
+  <div class="cs-hero-media" data-reveal style="--d:.4s">
+    <img src="img/nutrition-mockup.svg" width="1600" height="1000"
+         alt="Three phone screens showing the assistant's two-phase flow: intake with quick replies, a chunked meal recommendation using hand-based portions, and a refinement turn where dietary restrictions are confirmed and saved.">
+  </div>
+
+  <div class="wrap">
+
+    <dl class="meta-bar" data-reveal>
+      <div><dt>Role</dt><dd>Researcher &amp; conversational designer</dd></div>
+      <div><dt>Context</dt><dd>INFO-H 583, Conversational User Interfaces · Spring 2026</dd></div>
+      <div><dt>Methods</dt><dd>Wizard of Oz, NASA-RTLX, semi-structured interviews</dd></div>
+      <div><dt>Scope</dt><dd>Solo · 11 participants</dd></div>
+    </dl>
+
+    <div class="overview overview--split">
+      <p data-reveal>
+        People know more about nutrition than they can act on. The gap widens
+        exactly when support matters most.
+      </p>
+      <div class="sub" data-reveal style="--d:.12s">
+        <p>
+          I designed a chat-based nutrition assistant around a two-phase
+          conversational model, a short intake followed by recommendations
+          delivered one at a time, then evaluated it with eleven participants in
+          Wizard-of-Oz sessions, measuring cognitive load with the NASA Task
+          Load Index.
+        </p>
+        <p>
+          Composite workload landed at roughly a third of maximum and held
+          steady regardless of how tired participants were. The more useful
+          finding was one I didn't go looking for: the features that made the
+          assistant effortless for novices actively annoyed experts.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats" data-stagger="90" data-reveal>
+      <div class="stat"><b>11</b><span>participants in live Wizard-of-Oz sessions</span></div>
+      <div class="stat"><b>34%</b><span>of maximum cognitive workload (NASA-TLX composite)</span></div>
+      <div class="stat"><b>4.64</b><span>out of 5 for supportive, nonjudgmental tone</span></div>
+      <div class="stat"><b>24</b><span>live script deviations, each one a design lesson</span></div>
+    </div>
+
+    <!-- 01 PROBLEM -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">01</span><h2>Problem</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          Dietary adherence rarely fails from a lack of knowledge. It fails in
+          the moment of decision, when options are too numerous, tracking
+          demands too much, and there's no bandwidth left to evaluate anything
+          after a long day. I call it the translation gap: the distance between
+          what a person knows about nutrition in the abstract and what they can
+          act on right now.
+        </p>
+        <p>
+          I'd watched this pattern for six years of coaching. Outcomes improved
+          when support reduced load: a small number of actionable choices, brief
+          explanations, and low-friction portion heuristics built on hand sizes.
+          Those observations became the design hypotheses.
+        </p>
+        <p>
+          Conversational interfaces are a plausible fit because they meet users
+          at the decision point, collecting context through lightweight dialogue
+          and returning something actionable in the same exchange. Three
+          questions framed the study: does a two-phase structure reduce
+          perceived cognitive load, do explanations and nutrient estimates build
+          trust, and where does the flow create friction?
+        </p>
+      </div>
+
+      <blockquote class="pull" data-reveal>
+        <p>&#8220;The translation gap: the distance between what a person knows about nutrition in the abstract, and what they can act on in a given moment.&#8221;</p>
+        <cite>Project framing</cite>
+      </blockquote>
+    </section>
+
+    <!-- 02 PROCESS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">02</span><h2>Process</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          I ran a Wizard-of-Oz study, playing the chatbot myself. The prototype
+          was hand-written dialogue on paper, cut into modular strips I could
+          re-sequence live. When participants went off script, I wrote new
+          responses on blank strips mid-session, preserving the illusion of a
+          system that adapts. Across eleven sessions that happened 24 times, and
+          those improvisations turned out to be the most valuable data in the
+          study.
+        </p>
+        <p>Two earlier rounds of testing shaped five design features:</p>
+        <ul>
+          <li><strong>Heuristic portioning.</strong> Hand-based estimates like &#8220;2-3 palms of chicken.&#8221;</li>
+          <li><strong>Information chunking.</strong> One meal option at a time, gated behind &#8220;Hear next option?&#8221;</li>
+          <li><strong>Emoji reinforcement.</strong> Visual cues beside portion text for faster scanning.</li>
+          <li><strong>Quick replies.</strong> Tappable Yes/No to cut typing effort.</li>
+          <li><strong>Explicit memory confirmations.</strong> The system says what it saved, out loud.</li>
+        </ul>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/nutrition-woz-strips.png" width="1080" height="831" loading="lazy"
+             alt="The Wizard-of-Oz prototype: a hand-drawn phone outline and roughly twenty hand-written dialogue strips arranged on a black surface, showing a full conversation from intake through revised recommendations."></div>
+        <figcaption>The entire prototype. Hand-written dialogue strips, re-sequenced live during each session, with blank strips on hand for the moments participants went somewhere the script hadn't anticipated.</figcaption>
+      </figure>
+
+      <div class="prose" data-reveal>
+        <p>
+          Each session ran about fifteen minutes across two scenarios. The first
+          tested intake and refinement. The second tested something harder: a
+          fatigue-driven pivot, where the participant abandons cooking
+          mid-conversation, says &#8220;I'm too tired to cook,&#8221; and the assistant has
+          to follow them to fast food without moralizing about it.
+        </p>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/nutrition-woz-strips-2.png" width="1078" height="458" loading="lazy"
+             alt="A single paper strip showing hand-drawn Yes and No buttons, used to simulate tappable quick replies."></div>
+        <figcaption>Quick replies, simulated. Reducing typing effort mattered enough to test at paper fidelity, and participants tapped the strip.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 03 FINDINGS -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">03</span><h2>Findings</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          Composite cognitive workload averaged 9.64 out of a possible 28, about
+          34% of maximum, and was nearly identical between the high-fatigue and
+          low-fatigue groups (9.83 versus 9.40). The design reduces load evenly
+          across fatigue levels. Participants credited
+          chunking most often: one option at a time gave them a sense of control
+          and turned reception into user-paced exploration.
+        </p>
+        <p>
+          Tone scored highest of anything measured, 4.64 out of 5, with ten of
+          eleven participants rating it a perfect 5. The moment that earned it
+          was the pizza pivot. When participants gave up on cooking and the
+          assistant answered &#8220;No problem. We can pivot,&#8221; they visibly relaxed.
+          Several laughed. Several said it was the reason they'd use it again:
+          the system was working with the evening they actually had.
+        </p>
+      </div>
+
+      <blockquote class="pull pull--wide" data-reveal>
+        <p>&#8220;No problem. We can pivot.&#8221; The one line that produced visible relief at every fatigue level.</p>
+        <cite>Scenario 2 · the fast-food pivot</cite>
+      </blockquote>
+
+      <div class="prose" data-reveal>
+        <p>
+          Trust in recommendations was the lowest-scoring item at 3.45 of 5, and
+          digging into why produced the study's most interesting result. Portion
+          format preference split hard along expertise lines, the widest
+          variance of any measure I collected.
+        </p>
+      </div>
+
+      <div class="bars" data-reveal>
+        <div class="bar-row">
+          <div class="bl"><span>Basic or no nutrition knowledge (n=4)</span><b>4.50</b></div>
+          <div class="bar-track"><div class="bar-fill" style="--v:.90"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bl"><span>Moderate knowledge (n=5)</span><b>3.80</b></div>
+          <div class="bar-track"><div class="bar-fill" style="--v:.76; --d:.12s"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bl"><span>Advanced macro-trackers (n=2)</span><b>1.50</b></div>
+          <div class="bar-track"><div class="bar-fill" style="--v:.30; --d:.24s"></div></div>
+        </div>
+        <p class="bar-note">Preference for hand-based portions over gram measurements, 1 to 5 scale.</p>
+      </div>
+
+      <div class="prose" data-reveal>
+        <p>
+          The features that made the assistant effortless for its target
+          audience, heuristic portions and broad nutrient ranges and chunked
+          delivery, were precisely the features that frustrated users who had
+          already internalized precise tracking. That tension is the central
+          design challenge for nutrition conversational agents, and naming it
+          clearly was worth more than a cleaner result would have been.
+        </p>
+        <p>The study produced four design implications:</p>
+        <ul>
+          <li><strong>Adaptive precision by expertise.</strong> Heuristics by default, gram-level detail behind an accessible toggle.</li>
+          <li><strong>Upfront restriction intake.</strong> Participants with dietary restrictions generated the most script deviations and the most incomplete scenarios.</li>
+          <li><strong>Explicit memory duration.</strong> &#8220;Saved for tonight&#8221; versus &#8220;Saved for all future sessions&#8221; closes an ambiguity several participants raised unprompted.</li>
+          <li><strong>Scale to a functional prototype.</strong> An LLM backend would test whether low load survives real-time generation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 REFLECTION -->
+    <section class="cs-section">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">04</span><h2>Reflection</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>
+          The broader principle here is that decision burden is better reduced
+          through conversational <em>structure</em> than through information
+          restriction, a pattern I'd expect to generalize to other
+          decision-fatigue domains like financial planning or healthcare
+          navigation.
+        </p>
+        <p>
+          The limitations are real and worth stating plainly: a convenience
+          sample of eleven, single-session evaluation, and the experimenter
+          effects inherent to playing the system yourself. The advanced-user
+          subgroup was two people, far too small to conclude anything from,
+          though the pattern was directionally clear enough to shape my top
+          recommendation.
+        </p>
+        <p>
+          What I'd do differently is treat expertise as a planned variable and
+          test the split deliberately. I recruited for fatigue and got the
+          fatigue answer I expected; the finding that actually changed the
+          design came from a variable I hadn't planned to examine. The next step
+          is the functional prototype, which is what I'm building now as
+          MindfulWill's nutrition planner.
+        </p>
+      </div>
+    </section>
+
+    <nav class="cs-next" data-reveal aria-label="Next case study">
+      <a href="wind-down-ar-glasses.html">
+        <span class="title">Wind-Down Smart Glasses</span>
+        <span class="dir">Next · Prototyping →</span>
+      </a>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Will Smith · designed and built by hand.</p>
+    <ul class="footer-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:willsmith8418@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/willsmith8418/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
