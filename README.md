@@ -1,19 +1,21 @@
 # Will Smith, Portfolio
 
+**Live: https://willsmith8418-code.github.io/**
+
 Static HTML/CSS/JS portfolio. No build step, no dependencies.
 
-## Deploy to GitHub Pages
+## Publishing an update
+
+GitHub Pages serves the `main` branch of this repo. Any push goes live in
+about a minute.
 
 ```bash
 cd C:/Users/William/MindfulFable
-git init && git add . && git commit -m "Portfolio site"
-gh repo create willsmith8418-code/portfolio --public --source=. --push
+git add -A && git commit -m "Describe the change" && git push
 ```
 
-Then in the repo: **Settings, Pages, Source: Deploy from a branch, `main` / `(root)`**.
-Site publishes at `https://willsmith8418-code.github.io/portfolio/`.
-
-`index.html` is at the root and all paths are relative, so it works from any subpath.
+`index.html` is at the repo root and every path is relative, so the site also
+opens correctly straight off the filesystem for local review.
 
 ## Structure
 
