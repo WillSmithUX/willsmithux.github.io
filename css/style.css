@@ -715,13 +715,14 @@ figure.fig figcaption {
 /* ---------- ABOUT ---------- */
 .about-hero {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: clamp(2rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
   padding: clamp(3rem, 8vw, 6rem) 0 0;
 }
 .portrait {
   position: relative;
+  max-width: 260px;
   aspect-ratio: 4 / 5;
   background: linear-gradient(150deg, var(--paper-2), var(--paper-3));
   border: 1px solid var(--line);
@@ -922,7 +923,7 @@ figure.fig figcaption {
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .about-hero { grid-template-columns: 1fr; gap: 2.5rem; }
-  .portrait { max-width: 380px; }
+  .portrait { max-width: 220px; }
   .timeline-list li { grid-template-columns: 9rem 1fr; }
 }
 
