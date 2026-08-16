@@ -1,6 +1,6 @@
 # Will Smith, Portfolio
 
-**Live: https://willsmith8418-code.github.io/**
+**Live: https://willsmithux.github.io/**
 
 Static HTML/CSS/JS portfolio. No build step, no dependencies.
 
