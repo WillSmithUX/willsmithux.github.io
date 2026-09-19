@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Cover: three abstract figures seen through an augmented-reality overlay, each tagged with a star rating. The third figure's score has fallen to 2.6 and is marked in red.">
+  <defs>
+    <linearGradient id="ndBg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#1f262b"/><stop offset="55%" stop-color="#181e22"/><stop offset="100%" stop-color="#111619"/>
+    </linearGradient>
+    <radialGradient id="ndVig" cx="0.5" cy="0.45" r="0.78">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <linearGradient id="ndFig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f4c55"/><stop offset="100%" stop-color="#232c32"/>
+    </linearGradient>
+    <linearGradient id="ndDim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f3a41"/><stop offset="100%" stop-color="#1b2328"/>
+    </linearGradient>
+    <filter id="ndGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <g id="st"><path d="M0,-9 L2.64,-3.65 L8.56,-2.78 L4.28,1.39 L5.29,7.28 L0,4.5 L-5.29,7.28 L-4.28,1.39 L-8.56,-2.78 L-2.64,-3.65 Z"/></g>
+    <style>
+      .ui { font-family: Inter, 'Segoe UI', -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+      .sc { font-size: 40px; font-weight: 600; letter-spacing: .5px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#ndBg)"/>
+  <g opacity="0.05" stroke="#dbe3e5" stroke-width="1.5">
+    <line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="800" x2="1200" y2="800"/>
+  </g>
+
+  <!-- figure 1 -->
+  <g>
+    <path d="M110 890 C110 748, 172 652, 250 652 C328 652, 390 748, 390 890 Z" fill="url(#ndFig)"/>
+    <circle cx="250" cy="548" r="82" fill="url(#ndFig)"/>
+    <g stroke="#dbe3e5" stroke-opacity="0.3" stroke-width="2.4" fill="none">
+      <path d="M144 452 L144 432 L164 432"/><path d="M336 432 L356 432 L356 452"/>
+      <path d="M144 646 L144 666 L164 666"/><path d="M336 666 L356 666 L356 646"/>
+    </g>
+    <g class="ui" filter="url(#ndGlow)">
+      <rect x="300" y="370" width="178" height="76" rx="38" fill="#0d1114" fill-opacity="0.6" stroke="#dbe3e5" stroke-opacity="0.5" stroke-width="2"/>
+      <use href="#st" x="338" y="408" fill="#dbe3e5" fill-opacity="0.85"/>
+      <text class="sc" x="364" y="422" fill="#dbe3e5">4.8</text>
+    </g>
+  </g>
+
+  <!-- figure 2 -->
+  <g>
+    <path d="M460 890 C460 748, 522 652, 600 652 C678 652, 740 748, 740 890 Z" fill="url(#ndFig)"/>
+    <circle cx="600" cy="548" r="82" fill="url(#ndFig)"/>
+    <g stroke="#dbe3e5" stroke-opacity="0.3" stroke-width="2.4" fill="none">
+      <path d="M494 452 L494 432 L514 432"/><path d="M686 432 L706 432 L706 452"/>
+      <path d="M494 646 L494 666 L514 666"/><path d="M686 666 L706 666 L706 646"/>
+    </g>
+    <g class="ui" filter="url(#ndGlow)">
+      <rect x="650" y="300" width="178" height="76" rx="38" fill="#0d1114" fill-opacity="0.6" stroke="#dbe3e5" stroke-opacity="0.45" stroke-width="2"/>
+      <use href="#st" x="688" y="338" fill="#dbe3e5" fill-opacity="0.8"/>
+      <text class="sc" x="714" y="352" fill="#dbe3e5">4.2</text>
+    </g>
+  </g>
+
+  <!-- figure 3, the nosedive -->
+  <g>
+    <path d="M760 890 C760 748, 822 652, 900 652 C978 652, 1040 748, 1040 890 Z" fill="url(#ndDim)"/>
+    <circle cx="900" cy="548" r="82" fill="url(#ndDim)"/>
+    <g stroke="#c4626b" stroke-opacity="0.5" stroke-width="2.4" fill="none">
+      <path d="M794 452 L794 432 L814 432"/><path d="M986 432 L1006 432 L1006 452"/>
+      <path d="M794 646 L794 666 L814 666"/><path d="M986 666 L1006 666 L1006 646"/>
+    </g>
+    <path d="M866 300 L920 322 L968 356 L1012 396" stroke="#c4626b" stroke-opacity="0.55" stroke-width="2.4" fill="none" stroke-dasharray="5 8"/>
+    <g class="ui" filter="url(#ndGlow)">
+      <rect x="962" y="392" width="196" height="76" rx="38" fill="#1a0f11" fill-opacity="0.75" stroke="#c4626b" stroke-opacity="0.92" stroke-width="2"/>
+      <use href="#st" x="998" y="430" fill="#c4626b"/>
+      <text class="sc" x="1024" y="444" fill="#e08a90">2.6</text>
+      <path d="M1122 418 L1122 442 M1113 434 L1122 444 L1131 434" stroke="#c4626b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <rect width="1200" height="900" fill="url(#ndVig)"/>
+</svg>
