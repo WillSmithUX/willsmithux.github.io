@@ -142,16 +142,34 @@
           <li><strong>Trusted accountability.</strong> Sharing felt safe only with small, chosen groups: a friend, a partner, a coach.</li>
           <li><strong>Emotional context.</strong> Motivation, stress, and energy mattered as much as any metric, and no app was capturing them.</li>
         </ul>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/effortcircles-research.svg" width="1600" height="760" loading="lazy"
+             alt="Three research patterns mapped to the design decisions they produced: privacy preference became the Inner Circle, trusted accountability became the Outer Circle and the binary save-or-post choice, and emotional context became energy and stress fields."></div>
+        <figcaption>Every structural decision traces back to a sentence a participant said out loud. This mapping is what I used to argue for the architecture.</figcaption>
+      </figure>
+
+      <div class="prose" data-reveal>
         <p>
           Those patterns became the architecture directly. An <strong>Inner
           Circle</strong> for honest sharing with a handful of chosen people. An
           <strong>Outer Circle</strong> for lower-pressure updates. A binary
-          Save-versus-Post action so the privacy decision is explicit rather
-          than buried in settings. Calm colour and minimal required inputs, so
+          Save-versus-Post action so the privacy decision stays explicit at the
+          moment of writing. Calm colour and minimal required inputs, so
           journaling on a bad day costs almost nothing. And energy and stress as
           first-class fields, because that's what participants said they were
           actually tracking.
         </p>
+      </div>
+
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/effortcircles-model.svg" width="1600" height="820" loading="lazy"
+             alt="Concentric diagram of the sharing model: the private journal at the centre, an Inner Circle of four chosen people, an Outer Circle of twenty-three receiving lower-pressure updates, and everyone else outside the system seeing nothing."></div>
+        <figcaption>The core model. Each ring out loses detail, and there is no public tier at all, so there is no feed to fall behind in.</figcaption>
+      </figure>
+
+      <div class="prose" data-reveal>
         <p>
           We wireframed in Balsamiq, built high-fidelity flows in Figma, then
           ran four moderated usability sessions against the core tasks: write an
@@ -187,6 +205,12 @@
         </p>
       </div>
 
+      <figure class="fig" data-reveal>
+        <div class="frame"><img src="img/effortcircles-labeling.svg" width="1600" height="640" loading="lazy"
+             alt="Asked to write an entry, three of four participants opened the Journal tab while the action lived under Reflections. The fix moves all writing to Journal and leaves Reflections as the archive."></div>
+        <figcaption>The cheapest finding in the study and the one I could never have reached alone. Four sessions, one label, no change to the underlying flow.</figcaption>
+      </figure>
+
       <blockquote class="pull pull--wide" data-reveal>
         <p>The design lever for accountability is control over who is watching.</p>
         <cite>Synthesis · research patterns 1 to 3</cite>
@@ -211,8 +235,8 @@
       </div>
       <div class="prose" data-reveal>
         <p>
-          EffortCircles taught me to treat labels as testable hypotheses rather
-          than naming decisions. Journal versus Reflections was invisible from
+          EffortCircles taught me to treat labels as testable hypotheses.
+          Journal versus Reflections was invisible from
           inside our own mental model, obvious within four sessions, and a
           reminder that the cheapest research usually catches the thing a team
           is least able to see on its own.

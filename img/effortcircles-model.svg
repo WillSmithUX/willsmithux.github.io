@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 820" width="1600" height="820" role="img" aria-label="Concentric diagram of the EffortCircles sharing model: the private journal at the centre, an Inner Circle of four chosen people, an Outer Circle of twenty-three, and everyone else outside seeing nothing.">
+  <defs>
+    <linearGradient id="mBg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#f7f7f5"/><stop offset="100%" stop-color="#e9ece7"/>
+    </linearGradient>
+    <style>
+      .mn  { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; }
+      .ui  { font-family: Inter, 'Segoe UI', -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+      .ring{ font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; font-size: 11px; letter-spacing: 1.8px; }
+      .ttl { font-size: 18px; font-weight: 600; fill: #14181a; }
+      .det { font-size: 14px; fill: #5f676b; }
+      .av  { font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; fill: #fdfdfc; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="820" fill="url(#mBg)"/>
+  <text class="mn ring" x="80" y="66" fill="#676f74">WHO SEES WHAT</text>
+  <line x1="80" y1="88" x2="1520" y2="88" stroke="#d3d7d2"/>
+
+  <!-- ===== concentric model ===== -->
+  <g>
+    <!-- everyone else -->
+    <circle cx="500" cy="430" r="345" fill="none" stroke="#b9bfb8" stroke-width="1.4" stroke-dasharray="6 7"/>
+    <!-- outer circle -->
+    <circle cx="500" cy="430" r="268" fill="#41613f" fill-opacity="0.05" stroke="#41613f" stroke-opacity="0.3" stroke-width="1.4"/>
+    <!-- inner circle -->
+    <circle cx="500" cy="430" r="162" fill="#41613f" fill-opacity="0.11" stroke="#41613f" stroke-opacity="0.6" stroke-width="1.6"/>
+    <!-- you -->
+    <circle cx="500" cy="430" r="66" fill="#41613f"/>
+    <text class="ui" x="500" y="425" text-anchor="middle" font-size="16" font-weight="600" fill="#fdfdfc">You</text>
+    <text class="mn" x="500" y="446" text-anchor="middle" font-size="9.5" letter-spacing="1.2" fill="#c8d6c6">JOURNAL</text>
+
+    <!-- inner circle members -->
+    <g>
+      <circle cx="584" cy="345" r="20" fill="#41613f"/><text class="av" x="584" y="350" text-anchor="middle">M</text>
+      <circle cx="416" cy="345" r="20" fill="#5c7a58"/><text class="av" x="416" y="350" text-anchor="middle">D</text>
+      <circle cx="416" cy="515" r="20" fill="#7d9778"/><text class="av" x="416" y="520" text-anchor="middle">R</text>
+      <circle cx="584" cy="515" r="20" fill="#9bb096"/><text class="av" x="584" y="520" text-anchor="middle">J</text>
+    </g>
+
+    <!-- outer circle members -->
+    <g fill="#41613f" fill-opacity="0.32">
+      <circle cx="725" cy="430" r="9"/><circle cx="659" cy="271" r="9"/>
+      <circle cx="500" cy="205" r="9"/><circle cx="341" cy="271" r="9"/>
+      <circle cx="275" cy="430" r="9"/><circle cx="341" cy="589" r="9"/>
+      <circle cx="500" cy="655" r="9"/><circle cx="659" cy="589" r="9"/>
+      <circle cx="612" cy="234" r="9"/><circle cx="388" cy="234" r="9"/>
+      <circle cx="388" cy="626" r="9"/><circle cx="612" cy="626" r="9"/>
+    </g>
+
+    <text class="ring" x="500" y="292" text-anchor="middle" fill="#2c4429">INNER · 4</text>
+    <text class="ring" x="500" y="726" text-anchor="middle" fill="#41613f" fill-opacity="0.8">OUTER · 23</text>
+    <text class="ring" x="500" y="800" text-anchor="middle" fill="#8b918a">EVERYONE ELSE</text>
+  </g>
+
+  <!-- ===== legend ===== -->
+  <g>
+    <rect x="940" y="150" width="580" height="112" rx="6" fill="#fdfdfc" stroke="#d8dcdb"/>
+    <circle cx="978" cy="192" r="13" fill="#41613f"/>
+    <text class="ui ttl" x="1004" y="190">Your journal</text>
+    <text class="ui det" x="1004" y="222">Everything you write. Private unless you say otherwise.</text>
+    <text class="ui det" x="1004" y="244">Energy and stress logged beside it.</text>
+
+    <rect x="940" y="286" width="580" height="112" rx="6" fill="#41613f" fill-opacity="0.07" stroke="#41613f" stroke-opacity="0.35"/>
+    <circle cx="978" cy="328" r="13" fill="#41613f" fill-opacity="0.45"/>
+    <text class="ui ttl" x="1004" y="326">Inner Circle</text>
+    <text class="ui det" x="1004" y="358">Four people you chose. The honest version, including</text>
+    <text class="ui det" x="1004" y="380">the days you skipped. No numbers, no ranking.</text>
+
+    <rect x="940" y="422" width="580" height="112" rx="6" fill="#fdfdfc" stroke="#d8dcdb"/>
+    <circle cx="978" cy="464" r="13" fill="#41613f" fill-opacity="0.2"/>
+    <text class="ui ttl" x="1004" y="462">Outer Circle</text>
+    <text class="ui det" x="1004" y="494">Twenty-three people. Lower-pressure updates, with</text>
+    <text class="ui det" x="1004" y="516">none of the emotional detail attached.</text>
+
+    <rect x="940" y="558" width="580" height="90" rx="6" fill="none" stroke="#c7ccc6" stroke-dasharray="5 6"/>
+    <circle cx="978" cy="596" r="13" fill="none" stroke="#b9bfb8" stroke-dasharray="3 3"/>
+    <text class="ui ttl" x="1004" y="594" fill="#5f676b">Everyone else</text>
+    <text class="ui det" x="1004" y="626">Nothing. There is no public feed to fall behind in.</text>
+  </g>
+
+  <line x1="940" y1="690" x2="1520" y2="690" stroke="#d3d7d2"/>
+  <text class="ui" x="940" y="728" font-size="15" fill="#5f676b">Accountability without an audience. The</text>
+  <text class="ui" x="940" y="752" font-size="15" fill="#5f676b">lever is control over who is watching.</text>
+</svg>
