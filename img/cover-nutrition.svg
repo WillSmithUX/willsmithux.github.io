@@ -26,14 +26,14 @@
 
   <!-- recommendation card -->
   <g filter="url(#nuSh)">
-    <rect x="90" y="486" width="790" height="322" rx="30" fill="#fdfdfc" stroke="#dfe4e3" stroke-width="2"/>
+    <rect x="90" y="482" width="790" height="350" rx="30" fill="#fdfdfc" stroke="#dfe4e3" stroke-width="2"/>
   </g>
-  <text class="mn" x="132" y="548" font-size="24" letter-spacing="3.4" font-weight="500" fill="#2f5a63">OPTION 1 OF 3</text>
-  <text class="ui" x="132" y="608" font-size="44" font-weight="600" fill="#14181a">Turkey rice bowl</text>
-  <line x1="132" y1="640" x2="838" y2="640" stroke="#e2e7e6" stroke-width="2"/>
+  <text class="mn" x="132" y="544" font-size="24" letter-spacing="3.4" font-weight="500" fill="#2f5a63">OPTION 1 OF 3</text>
+  <text class="ui" x="132" y="604" font-size="44" font-weight="600" fill="#14181a">Turkey rice bowl</text>
+  <line x1="132" y1="636" x2="838" y2="636" stroke="#e2e7e6" stroke-width="2"/>
   <g class="ui" font-size="30" fill="#4a5255">
-    <circle cx="146" cy="686" r="9" fill="#2f5a63"/><text x="180" y="696">2-3 palms turkey</text>
-    <circle cx="146" cy="742" r="9" fill="#2f5a63"/><text x="180" y="752">1 fist rice, 1 thumb oil</text>
-    <circle cx="146" cy="798" r="9" fill="#2f5a63"/><text x="180" y="808">About 45g protein</text>
+    <circle cx="146" cy="682" r="9" fill="#2f5a63"/><text x="180" y="692">2-3 palms turkey</text>
+    <circle cx="146" cy="732" r="9" fill="#2f5a63"/><text x="180" y="742">1 fist rice, 1 thumb oil</text>
+    <circle cx="146" cy="782" r="9" fill="#2f5a63"/><text x="180" y="792">About 45g protein</text>
   </g>
 </svg>
