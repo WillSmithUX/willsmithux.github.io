@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" width="1600" height="760" role="img" aria-label="Diagram mapping three research patterns from seven interviews to the three design decisions they produced: privacy preference to the Inner Circle, trusted accountability to the Outer Circle, and emotional context to energy and stress fields.">
+  <defs>
+    <linearGradient id="rBg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#f7f7f5"/><stop offset="100%" stop-color="#e9ece7"/>
+    </linearGradient>
+    <style>
+      .mn  { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; }
+      .ui  { font-family: Inter, 'Segoe UI', -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+      .lab { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; font-size: 11px; letter-spacing: 1.8px; fill: #676f74; }
+      .pat { font-size: 19px; font-weight: 600; fill: #14181a; }
+      .quo { font-size: 14px; fill: #5f676b; font-style: italic; }
+      .dec { font-size: 19px; font-weight: 600; fill: #2c4429; }
+      .det { font-size: 14px; fill: #5f676b; }
+      .num { font-family: 'IBM Plex Mono', ui-monospace, Consolas, monospace; font-size: 11px; letter-spacing: 1.6px; fill: #41613f; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#rBg)"/>
+
+  <text class="lab" x="80" y="66">WHAT SEVEN INTERVIEWS SAID</text>
+  <text class="lab" x="880" y="66" fill="#41613f">WHAT IT BECAME</text>
+  <line x1="80" y1="88" x2="1520" y2="88" stroke="#d3d7d2"/>
+
+  <!-- ROW 1 -->
+  <g>
+    <rect x="80" y="118" width="620" height="158" rx="6" fill="#fdfdfc" stroke="#d8dcdb"/>
+    <text class="num" x="108" y="152">PATTERN 01</text>
+    <text class="ui pat" x="108" y="186">Privacy preference</text>
+    <text class="ui quo" x="108" y="216">&#8220;Participants rarely shared fitness publicly.</text>
+    <text class="ui quo" x="108" y="240">Health was personal, full stop.&#8221;</text>
+
+    <path d="M726 197 L836 197 M824 187 L836 197 L824 207" stroke="#41613f" stroke-opacity="0.55" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="880" y="118" width="640" height="158" rx="6" fill="#41613f" fill-opacity="0.07" stroke="#41613f" stroke-opacity="0.35"/>
+    <text class="ui dec" x="908" y="172">Inner Circle</text>
+    <text class="ui det" x="908" y="204">A private space for a handful of chosen people.</text>
+    <text class="ui det" x="908" y="228">No numbers, no ranking, no audience.</text>
+  </g>
+
+  <!-- ROW 2 -->
+  <g>
+    <rect x="80" y="300" width="620" height="158" rx="6" fill="#fdfdfc" stroke="#d8dcdb"/>
+    <text class="num" x="108" y="334">PATTERN 02</text>
+    <text class="ui pat" x="108" y="368">Trusted accountability</text>
+    <text class="ui quo" x="108" y="398">&#8220;Sharing felt safe only with small, chosen</text>
+    <text class="ui quo" x="108" y="422">groups: a friend, a partner, a coach.&#8221;</text>
+
+    <path d="M726 379 L836 379 M824 369 L836 379 L824 389" stroke="#41613f" stroke-opacity="0.55" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="880" y="300" width="640" height="158" rx="6" fill="#41613f" fill-opacity="0.07" stroke="#41613f" stroke-opacity="0.35"/>
+    <text class="ui dec" x="908" y="354">Outer Circle, and a binary choice</text>
+    <text class="ui det" x="908" y="386">Save privately or post, decided explicitly at the</text>
+    <text class="ui det" x="908" y="410">moment of writing, in one deliberate tap.</text>
+  </g>
+
+  <!-- ROW 3 -->
+  <g>
+    <rect x="80" y="482" width="620" height="158" rx="6" fill="#fdfdfc" stroke="#d8dcdb"/>
+    <text class="num" x="108" y="516">PATTERN 03</text>
+    <text class="ui pat" x="108" y="550">Emotional context</text>
+    <text class="ui quo" x="108" y="580">&#8220;Motivation, stress and energy mattered as</text>
+    <text class="ui quo" x="108" y="604">much as any metric, and nothing captured them.&#8221;</text>
+
+    <path d="M726 561 L836 561 M824 551 L836 561 L824 571" stroke="#41613f" stroke-opacity="0.55" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="880" y="482" width="640" height="158" rx="6" fill="#41613f" fill-opacity="0.07" stroke="#41613f" stroke-opacity="0.35"/>
+    <text class="ui dec" x="908" y="536">Energy and stress as first-class fields</text>
+    <text class="ui det" x="908" y="568">Logged beside the entry, in one tap, because</text>
+    <text class="ui det" x="908" y="592">that is what people said they were tracking.</text>
+  </g>
+
+  <line x1="80" y1="676" x2="1520" y2="676" stroke="#d3d7d2"/>
+  <text class="ui" x="80" y="716" font-size="15" fill="#5f676b">Every structural decision traces to a sentence someone said out loud.</text>
+</svg>

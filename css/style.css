@@ -580,7 +580,7 @@ a:hover { color: var(--accent); }
 }
 
 /* Figures
-   Height is the constraint, not width. A near-square photo set to full column
+   Height is the binding constraint here. A near-square photo set to full column
    width renders taller than the viewport, so cap the height and let width
    follow. Landscape images are barely affected; square ones come back to a
    size you can actually take in at a glance. */
