@@ -13,7 +13,7 @@
   --ink:        #14181a;
   --ink-2:      #333a3d;
   --ink-3:      #5f676b;
-  --ink-4:      #8f979b;
+  --ink-4:      #676f74;   /* 4.77:1 on --paper, clears WCAG AA with margin */
 
   --line:       #e1e2dc;
   --line-2:     #cacbc4;
@@ -579,12 +579,23 @@ a:hover { color: var(--accent); }
   color: var(--ink-4);
 }
 
-/* Figures */
+/* Figures
+   Height is the constraint, not width. A near-square photo set to full column
+   width renders taller than the viewport, so cap the height and let width
+   follow. Landscape images are barely affected; square ones come back to a
+   size you can actually take in at a glance. */
 figure.fig { margin: clamp(2.5rem, 6vw, 4rem) 0; }
-figure.fig img { width: 100%; height: auto; border-radius: 2px; }
+figure.fig img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(70vh, 700px);
+  border-radius: 2px;
+}
 figure.fig .frame {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-  background: var(--paper-3);
   border-radius: 2px;
 }
 figure.fig figcaption {
