@@ -10,7 +10,7 @@ GitHub Pages serves the `main` branch of this repo. Any push goes live in
 about a minute.
 
 ```bash
-cd [local path removed]
+cd path/to/Portfolio
 git add -A && git commit -m "Describe the change" && git push
 ```
 
@@ -30,7 +30,7 @@ nosedive-ethics-evaluation.html   Case study 04, Critical Analysis
 css/style.css                     Design system (single stylesheet)
 js/main.js                        Scroll reveals, parallax, nav, progress bar
 img/                              Case study imagery
-assets/Will-Smith-UX-Resume.pdf    Public resume linked from every page
+assets/Will-Smith-UX-Resume.pdf    Public resume with LinkedIn contact only
 ```
 
 ## Design system
@@ -91,7 +91,7 @@ colons, or a middot (`·`) as a separator instead.
 ## Local preview
 
 ```bash
-python -m http.server 8766 --bind 127.0.0.1 --directory [local path removed]
+python -m http.server 8766 --bind 127.0.0.1
 ```
 
 ## Case study updates
@@ -105,3 +105,10 @@ with the artifacts used in testing.
 For EffortCircles, original Balsamiq wireframes and Figma exports can supplement
 the existing portfolio diagrams when available. The current diagrams illustrate
 the architecture and findings; they are not original wireframe exports.
+
+## Public information
+
+Publish only the public resume. Keep the full application resume and original
+research documents outside this repository. The public copy uses LinkedIn for
+contact and omits phone numbers, personal email, location, current workplace
+details, and GPA. Check PDF text, metadata, and screenshots before publishing.
