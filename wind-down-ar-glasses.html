@@ -40,6 +40,7 @@
       <li><a href="index.html#work">Work</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/Will-Smith-UX-Resume.pdf">Resume</a></li>
     </ul>
   </div>
 </header>
@@ -65,6 +66,10 @@
          alt="Two large glowing amber rings labelled IN float in a dark bedroom, with the caption four-seven-eight breath, round one of three.">
   </div>
 
+  <div class="wrap hero-caption">
+    <p>Concept visualization of the AR experience. Testing used hand-drawn overlays and simulated device responses.</p>
+  </div>
+
   <div class="wrap">
 
     <dl class="meta-bar" data-reveal>
@@ -74,6 +79,15 @@
       <div><dt>Scope</dt><dd>Two-person team · 6 testers, 2 rounds</dd></div>
     </dl>
 
+    <dl class="project-brief" data-reveal>
+      <div><dt>Who it serves</dt><dd>Working adults who reach bedtime with racing thoughts and need help starting a wind-down routine.</dd></div>
+      <div><dt>What I owned</dt><dd>Cognitive offloading: voice capture, the drawer metaphor, and returning saved worries in a morning recap.</dd></div>
+      <div><dt>Project state</dt><dd>Tested interaction concept. AR sensing, device integrations, and effects on sleep were simulated or remain untested.</dd></div>
+    </dl>
+    <nav class="case-nav" aria-label="Case study sections">
+      <a href="#problem">01 Problem</a><a href="#process">02 Process</a><a href="#findings">03 Findings</a><a href="#final-design">04 Final design</a><a href="#reflection">05 Reflection</a>
+    </nav>
+
     <div class="overview overview--split">
       <p data-reveal>
         Most people know the rules of sleep hygiene and break them anyway.
@@ -81,8 +95,8 @@
       </p>
       <div class="sub" data-reveal style="--d:.12s">
         <p>
-          Wind-Down detects an elevated heart rate past bedtime and runs a
-          gentle ritual: lights dim, the Hatch starts, worries get captured by
+          The Wind-Down concept uses an elevated heart rate past bedtime to
+          begin a gentle ritual: lights dim, the Hatch starts, worries get captured by
           voice and filed for morning, pulsing rings pace a 4-7-8 breath, and a
           morning recap closes the loop.
         </p>
@@ -98,19 +112,19 @@
 
     <div class="stats" data-stagger="90" data-reveal>
       <div class="stat"><b>40</b><span>concepts sketched before choosing a direction</span></div>
-      <div class="stat"><b>3</b><span>fidelity stages, from paper to interactive</span></div>
+      <div class="stat"><b>3</b><span>fidelity stages exploring the interaction</span></div>
       <div class="stat"><b>6</b><span>testers across two Wizard-of-Oz rounds</span></div>
       <div class="stat"><b>5/6</b><span>steps passed a structured cognitive walkthrough</span></div>
     </div>
 
     <!-- 01 PROBLEM -->
-    <section class="cs-section">
+    <section class="cs-section" id="problem">
       <div class="sec-label" data-reveal>
         <span class="sec-num">01</span><h2>Problem</h2><span class="rule"></span>
       </div>
       <div class="prose" data-reveal>
         <p>
-          Meet Jordan: a working professional whose nervous system is still in
+          Jordan is the scenario persona: a working professional still in
           work mode at 10pm. They scroll in bed, fall asleep with the TV on, and
           wake up groggy. Their sleep tracker reports a poor score and offers no
           path forward. Jordan knows the principles of sleep hygiene. Most
@@ -125,6 +139,12 @@
           without demanding attention, and IoT puts the burden of responding on
           the room.
         </p>
+        <p>
+          The assumption we tested was that voice capture and a clear place to
+          put tomorrow's worries would make the ritual understandable. Our six
+          usability sessions examined that interaction; they did not test sleep
+          improvement or establish a clinical need for AR glasses.
+        </p>
       </div>
 
       <blockquote class="pull" data-reveal>
@@ -135,12 +155,12 @@
       <figure class="fig" data-reveal>
         <div class="frame"><img src="img/windown-iot-handoff.png" width="1536" height="1024" loading="lazy"
              alt="An AR overlay in a dark bedroom reading All set for sleep, with checkmarks for lights dimming, Hatch starting, and phone silenced."></div>
-        <figcaption>The IoT handoff. Three confirmations, then the overlay shrinks away. Feedback that the environment has changed, without asking Jordan to manage it.</figcaption>
+        <figcaption>Concept visualization of the IoT handoff. The proposed confirmations show what the room would do; device responses were simulated during testing.</figcaption>
       </figure>
     </section>
 
     <!-- 02 PROCESS -->
-    <section class="cs-section">
+    <section class="cs-section" id="process">
       <div class="sec-label" data-reveal>
         <span class="sec-num">02</span><h2>Process</h2><span class="rule"></span>
       </div>
@@ -178,11 +198,20 @@
         </figure>
       </div>
 
-      <figure class="fig" data-reveal>
-        <div class="frame"><img src="img/windown-woz-kit.jpg" width="1500" height="1254" loading="lazy"
-             alt="Thirteen hand-drawn AR overlay cards spread on a wooden table around a pair of glasses with the lenses removed."></div>
-        <figcaption>The entire mid-fidelity prototype: thirteen hand-drawn overlay cards and a pair of sunglasses with the lenses popped out. The facilitator slid cards through the empty frame on cue while playing the AI and IoT responses.</figcaption>
-      </figure>
+      <div class="fig-pair prototype-comparison" data-reveal>
+        <figure class="fig">
+          <span class="stage-label">First test · Paper overlays</span>
+          <div class="frame"><img src="img/windown-woz-kit.jpg" width="1500" height="1254" loading="lazy"
+               alt="Thirteen hand-drawn AR overlay cards spread on a wooden table around a pair of glasses with the lenses removed."></div>
+          <figcaption>Thirteen cards and empty sunglass frames. The facilitator supplied the system's voice and device responses.</figcaption>
+        </figure>
+        <figure class="fig">
+          <span class="stage-label">Revision · Clearer actions</span>
+          <div class="frame"><img src="img/windown-redraw-will.jpg" width="1320" height="1270" loading="lazy"
+               alt="Revised cards add a microphone icon, swipe-to-exit instructions, larger breathing cues, and an explicit prompt to speak."></div>
+          <figcaption>My redraw after round one. A visible voice cue, an exit route, larger breath labels, and a direct offload prompt address the observed confusion.</figcaption>
+        </figure>
+      </div>
 
       <div class="prose" data-reveal>
         <p>
@@ -194,27 +223,27 @@
         </p>
         <p>
           We then redrew the problem cards independently, without coordinating,
-          and arrived at the same three solutions. That convergence was the
-          signal the moves were intuitive.
+          and arrived at similar solutions. We took those revisions into the
+          second round rather than treating our agreement as evidence of usability.
         </p>
       </div>
 
-      <figure class="fig" data-reveal>
-        <div class="frame"><img src="img/windown-redraw-will.jpg" width="1320" height="1270" loading="lazy"
-             alt="Redrawn prototype cards: a wind-down card with a microphone icon and swipe-to-exit label, large IN and OUT breathing circles, and an Anything on your mind card."></div>
-        <figcaption>My hi-fi redraw. A mic icon signalling voice input, an explicit exit affordance, and breath cues large enough to read as immersive.</figcaption>
-      </figure>
+      <dl class="decision-list" data-reveal>
+        <div><dt>The first action was unclear.</dt><dd>The first card lacked an action cue. I added a microphone icon and an explicit prompt to speak.</dd></div>
+        <div><dt>Breathing labels were hard to interpret.</dt><dd>We made IN and OUT larger and easier to read. Timing remained a separate issue for the next prototype.</dd></div>
+        <div><dt>Leaving the session was unclear.</dt><dd>We added “Swipe to exit anytime” so the user could stop the ritual without searching for a control.</dd></div>
+      </dl>
     </section>
 
     <!-- 03 FINDINGS -->
-    <section class="cs-section">
+    <section class="cs-section" id="findings">
       <div class="sec-label" data-reveal>
         <span class="sec-num">03</span><h2>Findings</h2><span class="rule"></span>
       </div>
       <div class="prose" data-reveal>
         <p>
-          The second round validated the core interaction. Voice-first capture
-          removed the friction of typing in bed. One tester's summary was &#8220;very
+          The second round supported the voice-first capture and drawer metaphor
+          in this small test. One tester's summary was &#8220;very
           seamless, I didn't have to click any buttons.&#8221; The drawer metaphor for
           offloaded worries read instantly: the worries land somewhere, out of
           your head and into a container. And testers immediately connected the morning
@@ -227,12 +256,12 @@
         <figure class="fig">
           <div class="frame"><img src="img/windown-offload.png" width="1536" height="1024" loading="lazy"
                alt="An AR overlay asking Anything on your mind, with three glowing cards reading email Sarah tomorrow, laundry, and don't forget dentist, filing down into a drawer labelled Saved for morning."></div>
-          <figcaption>Cognitive offload. Spoken worries become cards, and the cards go into a drawer, a metaphor testers understood without explanation.</figcaption>
+          <figcaption>Concept visualization of cognitive offload. Testers understood the drawer metaphor in the simulated flow.</figcaption>
         </figure>
         <figure class="fig">
           <div class="frame"><img src="img/windown-morning.png" width="1536" height="1024" loading="lazy"
                alt="A morning AR overlay in a sunlit bedroom reading Good morning Jordan, sleep score 84, wind-down 9:30pm next time, with the three tasks from the previous night listed as ready for today."></div>
-          <figcaption>The morning recap returns exactly what was filed the night before, the beat that made the whole ritual cohere as a system.</figcaption>
+          <figcaption>Concept visualization of the morning recap. The task list carries forward the worries captured during the bedtime scenario.</figcaption>
         </figure>
       </div>
 
@@ -263,15 +292,35 @@
       </blockquote>
     </section>
 
-    <!-- 04 REFLECTION -->
-    <section class="cs-section">
+    <section class="cs-section" id="final-design">
       <div class="sec-label" data-reveal>
-        <span class="sec-num">04</span><h2>Reflection</h2><span class="rule"></span>
+        <span class="sec-num">04</span><h2>The final interaction</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>The resulting concept connects the bedtime ritual to the next morning. Each step has a job, and the interface gives attention back once that job is done.</p>
+      </div>
+      <ol class="design-stages" data-reveal>
+        <li><h3>Notice bedtime</h3><p>A proposed heart-rate trigger offers a wind-down session. Sensing was simulated.</p></li>
+        <li><h3>Prepare the room</h3><p>Confirm dimmed lights and sound, keeping device management outside the main task.</p></li>
+        <li><h3>Offload worries</h3><p>Capture spoken thoughts and place them in a drawer for morning. This was my main design contribution.</p></li>
+        <li><h3>Guide a breath</h3><p>Present large breathing cues. A paced audio or visual count still needs to be prototyped.</p></li>
+        <li><h3>End quietly</h3><p>Confirm the end of the ritual, then let the overlay recede. Physiological detection remains a concept.</p></li>
+        <li><h3>Return in the morning</h3><p>Bring back saved worries as a task list, making the offload useful beyond bedtime.</p></li>
+      </ol>
+      <div class="prose" data-reveal>
+        <p><strong>What remains:</strong> a working AR prototype, real device integrations, paced breathing feedback, and an evaluation of whether the experience is useful over repeated nights.</p>
+      </div>
+    </section>
+
+    <!-- 05 REFLECTION -->
+    <section class="cs-section" id="reflection">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">05</span><h2>Reflection</h2><span class="rule"></span>
       </div>
       <figure class="fig" data-reveal>
         <div class="frame"><img src="img/windown-calm.png" width="1536" height="1024" loading="lazy"
              alt="A soft AR overlay reading Calm detected, sleep ready, with a flattening heart-rate trace, in a dim bedroom."></div>
-        <figcaption>Calm detected. The confirmation that the session worked, and the moment the interface gets out of the way.</figcaption>
+        <figcaption>Concept visualization of the end state. “Calm detected” represents proposed feedback, not a measured outcome from the study.</figcaption>
       </figure>
       <div class="prose" data-reveal>
         <p>

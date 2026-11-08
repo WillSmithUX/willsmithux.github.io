@@ -30,6 +30,7 @@ nosedive-ethics-evaluation.html   Case study 04, Critical Analysis
 css/style.css                     Design system (single stylesheet)
 js/main.js                        Scroll reveals, parallax, nav, progress bar
 img/                              Case study imagery
+assets/Will-Smith-UX-Resume.pdf    Public resume linked from every page
 ```
 
 ## Design system
@@ -90,5 +91,17 @@ colons, or a middot (`·`) as a separator instead.
 ## Local preview
 
 ```bash
-npx serve -l 8317 [local path removed]
+python -m http.server 8766 --bind 127.0.0.1 --directory [local path removed]
 ```
+
+## Case study updates
+
+Nutrition, Wind-Down, and EffortCircles each include an audience and role summary,
+section links, the design decisions informed by research, and an explicit final
+prototype state. Keep tested behavior separate from proposed changes. Label
+portfolio reconstructions and concept visualizations so they are not confused
+with the artifacts used in testing.
+
+For EffortCircles, original Balsamiq wireframes and Figma exports can supplement
+the existing portfolio diagrams when available. The current diagrams illustrate
+the architecture and findings; they are not original wireframe exports.

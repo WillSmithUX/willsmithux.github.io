@@ -40,6 +40,7 @@
       <li><a href="index.html#work">Work</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/Will-Smith-UX-Resume.pdf">Resume</a></li>
     </ul>
   </div>
 </header>
@@ -65,6 +66,10 @@
          alt="Three phone screens showing the assistant's two-phase flow: intake with quick replies, a chunked meal recommendation using hand-based portions, and a refinement turn where dietary restrictions are confirmed and saved.">
   </div>
 
+  <div class="wrap hero-caption">
+    <p>Portfolio visualization of the conversation. The study used paper dialogue strips and a human operator.</p>
+  </div>
+
   <div class="wrap">
 
     <dl class="meta-bar" data-reveal>
@@ -73,6 +78,15 @@
       <div><dt>Methods</dt><dd>Wizard of Oz, NASA-RTLX, semi-structured interviews</dd></div>
       <div><dt>Scope</dt><dd>Solo · 11 participants</dd></div>
     </dl>
+
+    <dl class="project-brief" data-reveal>
+      <div><dt>Who it serves</dt><dd>People deciding what to eat when tired, with limited energy for tracking or comparing meals.</dd></div>
+      <div><dt>What I owned</dt><dd>Conversation design, paper prototyping, study facilitation, workload measurement, and research synthesis.</dd></div>
+      <div><dt>Project state</dt><dd>Evaluated research prototype. Adaptive precision and a functional chatbot remain next steps.</dd></div>
+    </dl>
+    <nav class="case-nav" aria-label="Case study sections">
+      <a href="#problem">01 Problem</a><a href="#process">02 Process</a><a href="#findings">03 Findings</a><a href="#final-design">04 Final design</a><a href="#reflection">05 Reflection</a>
+    </nav>
 
     <div class="overview overview--split">
       <p data-reveal>
@@ -88,23 +102,23 @@
           Load Index.
         </p>
         <p>
-          Composite workload landed at roughly a third of maximum and held
-          steady regardless of how tired participants were. The more useful
-          finding was one I didn't go looking for: the features that made the
-          assistant effortless for novices actively annoyed experts.
+          Workload scores were similar across the fatigue groups in this small
+          study. The finding that changed my recommendation was an unexpected
+          split: participants with little nutrition knowledge preferred hand-based
+          portions, while the two advanced trackers preferred more precision.
         </p>
       </div>
     </div>
 
     <div class="stats" data-stagger="90" data-reveal>
       <div class="stat"><b>11</b><span>participants in live Wizard-of-Oz sessions</span></div>
-      <div class="stat"><b>34%</b><span>of maximum cognitive workload (NASA-TLX composite)</span></div>
+      <div class="stat"><b>2</b><span>scenarios: meal planning and a fatigue-driven pivot</span></div>
       <div class="stat"><b>4.64</b><span>out of 5 for supportive, nonjudgmental tone</span></div>
       <div class="stat"><b>24</b><span>live script deviations, each one a design lesson</span></div>
     </div>
 
     <!-- 01 PROBLEM -->
-    <section class="cs-section">
+    <section class="cs-section" id="problem">
       <div class="sec-label" data-reveal>
         <span class="sec-num">01</span><h2>Problem</h2><span class="rule"></span>
       </div>
@@ -131,6 +145,11 @@
           perceived cognitive load, do explanations and nutrient estimates build
           trust, and where does the flow create friction?
         </p>
+        <p>
+          My starting assumption was that hand-based portions and one meal at a
+          time would suit people with little bandwidth. The study needed to
+          examine where that simplicity helped and where it removed detail a user wanted.
+        </p>
       </div>
 
       <blockquote class="pull" data-reveal>
@@ -140,7 +159,7 @@
     </section>
 
     <!-- 02 PROCESS -->
-    <section class="cs-section">
+    <section class="cs-section" id="process">
       <div class="sec-label" data-reveal>
         <span class="sec-num">02</span><h2>Process</h2><span class="rule"></span>
       </div>
@@ -188,16 +207,16 @@
     </section>
 
     <!-- 03 FINDINGS -->
-    <section class="cs-section">
+    <section class="cs-section" id="findings">
       <div class="sec-label" data-reveal>
         <span class="sec-num">03</span><h2>Findings</h2><span class="rule"></span>
       </div>
       <div class="prose" data-reveal>
         <p>
-          Composite cognitive workload averaged 9.64 out of a possible 28, about
-          34% of maximum, and was nearly identical between the high-fatigue and
-          low-fatigue groups (9.83 versus 9.40). The design reduces load evenly
-          across fatigue levels. Participants credited
+          On the workload composite used in the study, scores averaged 9.64 out
+          of 28, with similar averages for the high-fatigue and low-fatigue groups
+          (9.83 versus 9.40). Without a comparison condition, those scores do not
+          establish that the design reduced workload. Participants credited
           chunking most often: one option at a time gave them a sense of control
           and turned reception into user-paced exploration.
         </p>
@@ -243,35 +262,48 @@
 
       <div class="prose" data-reveal>
         <p>
-          The features that made the assistant effortless for its target
-          audience, heuristic portions and broad nutrient ranges and chunked
-          delivery, were precisely the features that frustrated users who had
-          already internalized precise tracking. That tension is the central
-          design challenge for nutrition conversational agents, and naming it
-          clearly was worth more than a cleaner result would have been.
+          Hand-based portions appeared useful for novices, while the two advanced
+          trackers wanted more exact information. That small subgroup cannot
+          establish a general preference, but it gave me a specific variable
+          to investigate in the next design.
         </p>
-        <p>The study produced four design implications:</p>
-        <ul>
-          <li><strong>Adaptive precision by expertise.</strong> Heuristics by default, gram-level detail behind an accessible toggle.</li>
-          <li><strong>Upfront restriction intake.</strong> Participants with dietary restrictions generated the most script deviations and the most incomplete scenarios.</li>
-          <li><strong>Explicit memory duration.</strong> &#8220;Saved for tonight&#8221; versus &#8220;Saved for all future sessions&#8221; closes an ambiguity several participants raised unprompted.</li>
-          <li><strong>Scale to a functional prototype.</strong> An LLM backend would test whether low load survives real-time generation.</li>
-        </ul>
+        <p>Three findings set the priorities for a functional prototype:</p>
+      </div>
+      <dl class="decision-list" data-reveal>
+        <div><dt>One portion format did not suit everyone.</dt><dd>Hand-based portions scored 4.50/5 among four novices and 1.50/5 among two advanced trackers. I recommended optional gram-level detail. This is a direction to test with a larger sample.</dd></div>
+        <div><dt>Restrictions disrupted the script.</dt><dd>Participants with dietary restrictions generated the most deviations and incomplete scenarios. I recommended collecting restrictions before suggesting a meal.</dd></div>
+        <div><dt>Saving a preference left a question open.</dt><dd>Participants asked how long information would be remembered. I recommended explicit labels such as “saved for tonight” and “saved for future sessions.”</dd></div>
+      </dl>
+    </section>
+
+    <section class="cs-section" id="final-design">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">04</span><h2>The evaluated conversation</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>The final study prototype combined a short intake with user-paced recommendations. Paper strips let me change the conversation during testing before investing in a working chatbot.</p>
+      </div>
+      <ol class="design-stages" data-reveal>
+        <li><h3>Understand the evening</h3><p>Collect context through short questions and quick replies, keeping the initial effort small.</p></li>
+        <li><h3>Offer one option</h3><p>Show a meal with a brief explanation and hand-based portions. Let the user decide when to hear the next option.</p></li>
+        <li><h3>Adapt without judgment</h3><p>Follow a change of plans, refine the recommendation, and confirm information the assistant has saved.</p></li>
+      </ol>
+      <div class="prose" data-reveal>
+        <p><strong>What this establishes:</strong> how participants responded to the conversation and where it broke down. Optional precision, earlier restriction intake, and clearer memory duration are research recommendations that still need implementation and another evaluation.</p>
       </div>
     </section>
 
-    <!-- 04 REFLECTION -->
-    <section class="cs-section">
+    <!-- 05 REFLECTION -->
+    <section class="cs-section" id="reflection">
       <div class="sec-label" data-reveal>
-        <span class="sec-num">04</span><h2>Reflection</h2><span class="rule"></span>
+        <span class="sec-num">05</span><h2>Reflection</h2><span class="rule"></span>
       </div>
       <div class="prose" data-reveal>
         <p>
-          The broader principle here is that decision burden is better reduced
-          through conversational <em>structure</em> than through information
-          restriction, a pattern I'd expect to generalize to other
-          decision-fatigue domains like financial planning or healthcare
-          navigation.
+          This study made conversational <em>structure</em> my next design
+          variable: how much to show, when to show it, and who needs more detail.
+          A comparison study could test whether that structure changes workload
+          relative to receiving all the options at once.
         </p>
         <p>
           The limitations are real and worth stating plainly: a convenience
@@ -285,9 +317,9 @@
           What I'd do differently is treat expertise as a planned variable and
           test the split deliberately. I recruited for fatigue and got the
           fatigue answer I expected; the finding that actually changed the
-          design came from a variable I hadn't planned to examine. The next step
-          is the functional prototype, which is what I'm building now as
-          MindfulWill's nutrition planner.
+          design came from a variable I hadn't planned to examine. A functional
+          chatbot would let me test whether these patterns hold when responses
+          are generated by software rather than a human operator.
         </p>
       </div>
     </section>

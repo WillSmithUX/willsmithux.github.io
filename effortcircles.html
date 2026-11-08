@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EffortCircles · Will Smith</title>
-<meta name="description" content="EffortCircles: a journaling app built on gentle accountability, designed from seven user interviews and validated through usability testing.">
+<meta name="description" content="EffortCircles: a journaling concept shaped by seven interviews and four usability sessions, connecting privacy needs to sharing controls and clearer navigation.">
 <link rel="canonical" href="https://willsmithux.github.io/effortcircles.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Will Smith">
 <meta property="og:url" content="https://willsmithux.github.io/effortcircles.html">
 <meta property="og:title" content="EffortCircles · Will Smith">
-<meta property="og:description" content="EffortCircles: a journaling app built on gentle accountability, designed from seven user interviews and validated through usability testing.">
+<meta property="og:description" content="EffortCircles: a journaling concept shaped by seven interviews and four usability sessions, connecting privacy needs to sharing controls and clearer navigation.">
 <meta property="og:image" content="https://willsmithux.github.io/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Will Smith, HCI Researcher and Designer">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="EffortCircles · Will Smith">
-<meta name="twitter:description" content="EffortCircles: a journaling app built on gentle accountability, designed from seven user interviews and validated through usability testing.">
+<meta name="twitter:description" content="EffortCircles: a journaling concept shaped by seven interviews and four usability sessions, connecting privacy needs to sharing controls and clearer navigation.">
 <meta name="twitter:image" content="https://willsmithux.github.io/img/og-image.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2341613f'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f7f7f5' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +40,7 @@
       <li><a href="index.html#work">Work</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/Will-Smith-UX-Resume.pdf">Resume</a></li>
     </ul>
   </div>
 </header>
@@ -64,6 +65,10 @@
          alt="Three phone screens: writing a journal entry with energy and stress tags, choosing between the Inner and Outer Circle, and the Inner Circle feed showing three entries with no metrics or ranking.">
   </div>
 
+  <div class="wrap hero-caption">
+    <p>Portfolio reconstruction of the journaling and sharing concept. The project was evaluated as a prototype.</p>
+  </div>
+
   <div class="wrap">
 
     <dl class="meta-bar" data-reveal>
@@ -73,22 +78,30 @@
       <div><dt>Scope</dt><dd>Team of four · 7 interviews, 4 usability sessions</dd></div>
     </dl>
 
+    <dl class="project-brief" data-reveal>
+      <div><dt>Who it serves</dt><dd>People who want support with physical activity while keeping personal health information and setbacks out of a public feed.</dd></div>
+      <div><dt>What I owned</dt><dd>Research synthesis and the circles interaction model, working within a four-person design team.</dd></div>
+      <div><dt>Project state</dt><dd>Academic design concept tested in four sessions. Sustained engagement and the revised navigation still need evaluation.</dd></div>
+    </dl>
+    <nav class="case-nav" aria-label="Case study sections">
+      <a href="#problem">01 Problem</a><a href="#process">02 Process</a><a href="#findings">03 Findings</a><a href="#final-design">04 Final design</a><a href="#reflection">05 Reflection</a>
+    </nav>
+
     <div class="overview overview--split">
       <p data-reveal>
         People want accountability. What they don't want is an audience.
       </p>
       <div class="sub" data-reveal style="--d:.12s">
         <p>
-          Apps like Strava and MyFitnessPal drive engagement through public
-          sharing and competition, and a large share of users eventually
-          disengage. Seven interviews told us why, consistently: health felt
-          personal, comparison felt corrosive, and the emotional context of a
-          workout mattered as much as the numbers.
+          Across seven interviews, participants described a tension in fitness
+          technology: they wanted support, but health felt personal and public
+          comparison could be discouraging. The emotional context of a workout
+          mattered alongside the numbers.
         </p>
         <p>
           EffortCircles answers with a two-tier social structure wrapped around
-          a journaling practice. Usability testing validated the core model and
-          caught a labelling problem we were all too close to the design to see.
+          a journaling practice. Four usability sessions supported the save-and-share
+          flow and exposed a navigation label that sent three people to the wrong place.
         </p>
       </div>
     </div>
@@ -96,12 +109,12 @@
     <div class="stats" data-stagger="90" data-reveal>
       <div class="stat"><b>7</b><span>interview participants, ages 18 to 63</span></div>
       <div class="stat"><b>3</b><span>research patterns that set the architecture</span></div>
-      <div class="stat"><b>100%</b><span>completed save-and-share once inside the flow</span></div>
-      <div class="stat"><b>75%</b><span>reached for the wrong tab to start writing</span></div>
+      <div class="stat"><b>4/4</b><span>completed save-and-share once inside the flow</span></div>
+      <div class="stat"><b>3/4</b><span>reached for the wrong tab to start writing</span></div>
     </div>
 
     <!-- 01 PROBLEM -->
-    <section class="cs-section">
+    <section class="cs-section" id="problem">
       <div class="sec-label" data-reveal>
         <span class="sec-num">01</span><h2>Problem</h2><span class="rule"></span>
       </div>
@@ -127,7 +140,7 @@
     </section>
 
     <!-- 02 PROCESS -->
-    <section class="cs-section">
+    <section class="cs-section" id="process">
       <div class="sec-label" data-reveal>
         <span class="sec-num">02</span><h2>Process</h2><span class="rule"></span>
       </div>
@@ -143,11 +156,16 @@
           <li><strong>Emotional context.</strong> Motivation, stress, and energy mattered as much as any metric, and no app was capturing them.</li>
         </ul>
       </div>
+      <ol class="design-stages" data-reveal>
+        <li><h3>Explore motivation</h3><p>Our early requirements work considered reminders, badges, and light competition as possible ways to support exercise.</p></li>
+        <li><h3>Challenge the premise</h3><p>Interviews emphasized privacy, encouragement from trusted people, and the emotional cost of comparison.</p></li>
+        <li><h3>Design for control</h3><p>We focused the concept on journaling, chosen sharing circles, and a deliberate choice between saving privately and posting.</p></li>
+      </ol>
 
       <figure class="fig" data-reveal>
         <div class="frame"><img src="img/effortcircles-research.svg" width="1600" height="760" loading="lazy"
              alt="Three research patterns mapped to the design decisions they produced: privacy preference became the Inner Circle, trusted accountability became the Outer Circle and the binary save-or-post choice, and emotional context became energy and stress fields."></div>
-        <figcaption>Every structural decision traces back to a sentence a participant said out loud. This mapping is what I used to argue for the architecture.</figcaption>
+        <figcaption>Research-to-design diagram prepared for this case study. It connects the interview themes to the proposed architecture.</figcaption>
       </figure>
 
       <div class="prose" data-reveal>
@@ -166,7 +184,7 @@
       <figure class="fig" data-reveal>
         <div class="frame"><img src="img/effortcircles-model.svg" width="1600" height="820" loading="lazy"
              alt="Concentric diagram of the sharing model: the private journal at the centre, an Inner Circle of four chosen people, an Outer Circle of twenty-three receiving lower-pressure updates, and everyone else outside the system seeing nothing."></div>
-        <figcaption>The core model. Each ring out loses detail, and there is no public tier at all, so there is no feed to fall behind in.</figcaption>
+        <figcaption>Portfolio diagram of the sharing model. The ring sizes and people shown are illustrative; the design has no public sharing tier.</figcaption>
       </figure>
 
       <div class="prose" data-reveal>
@@ -181,34 +199,33 @@
     </section>
 
     <!-- 03 FINDINGS -->
-    <section class="cs-section">
+    <section class="cs-section" id="findings">
       <div class="sec-label" data-reveal>
         <span class="sec-num">03</span><h2>Findings</h2><span class="rule"></span>
       </div>
       <div class="prose" data-reveal>
         <p>
-          The heart of the design held up. Every participant successfully saved
-          and shared an entry once inside the flow, which told me the
-          Inner/Outer Circle model and the binary Save-versus-Post choice were
-          legible without explanation. Nobody hesitated over who would see what,
-          the thing I'd been most worried about.
+          All four participants successfully saved and shared an entry once
+          inside the flow. In these sessions, the circles model and explicit
+          Save-versus-Post choice were understandable. This supports the
+          interaction at prototype level; it does not establish that people
+          would keep using it over time.
         </p>
         <p>
           The failure was at the front door. Three of four participants selected
           <strong>Journal</strong> when asked to write an entry, even though
           we'd put that action under <strong>Reflections</strong>. Users had
           cleanly divided the space into writing (Journal) and reviewing
-          (Reflections), and our label violated that model. The fix was
-          consolidation: all
-          writing actions live under Journal, and Reflections becomes what users
-          already assumed it was, the archive.
+          (Reflections), and our label violated that model. The resulting design
+          direction consolidates writing under Journal and uses Reflections for
+          reviewing past entries. That revision needs a follow-up usability test.
         </p>
       </div>
 
       <figure class="fig" data-reveal>
         <div class="frame"><img src="img/effortcircles-labeling.svg" width="1600" height="640" loading="lazy"
              alt="Asked to write an entry, three of four participants opened the Journal tab while the action lived under Reflections. The fix moves all writing to Journal and leaves Reflections as the archive."></div>
-        <figcaption>The cheapest finding in the study and the one I could never have reached alone. Four sessions, one label, no change to the underlying flow.</figcaption>
+        <figcaption>Reconstruction of the observed navigation mismatch and resulting design direction. The four sessions tested the original navigation, not the revised labels.</figcaption>
       </figure>
 
       <blockquote class="pull pull--wide" data-reveal>
@@ -228,10 +245,27 @@
       </div>
     </section>
 
-    <!-- 04 REFLECTION -->
-    <section class="cs-section">
+    <section class="cs-section" id="final-design">
       <div class="sec-label" data-reveal>
-        <span class="sec-num">04</span><h2>Reflection</h2><span class="rule"></span>
+        <span class="sec-num">04</span><h2>The resulting design</h2><span class="rule"></span>
+      </div>
+      <div class="prose" data-reveal>
+        <p>The concept makes the audience for an entry an explicit choice. A user can write without posting, choose a trusted circle when they want support, and include energy or stress alongside activity.</p>
+      </div>
+      <ol class="design-stages" data-reveal>
+        <li><h3>Write for yourself</h3><p>A journal entry captures the activity and its emotional context without requiring a public update.</p></li>
+        <li><h3>Choose who sees it</h3><p>Save privately or deliberately share with an Inner or Outer Circle. Audience control stays part of the action.</p></li>
+        <li><h3>Receive support</h3><p>The circle feed supports encouragement without a leaderboard or a public performance score.</p></li>
+      </ol>
+      <div class="prose" data-reveal>
+        <p><strong>What changed:</strong> interviews redirected the concept toward trusted support, and usability testing challenged the navigation. The next evaluation would retest finding the writing action, then examine whether people find the sharing model useful over several weeks.</p>
+      </div>
+    </section>
+
+    <!-- 05 REFLECTION -->
+    <section class="cs-section" id="reflection">
+      <div class="sec-label" data-reveal>
+        <span class="sec-num">05</span><h2>Reflection</h2><span class="rule"></span>
       </div>
       <div class="prose" data-reveal>
         <p>
@@ -242,8 +276,8 @@
           is least able to see on its own.
         </p>
         <p>
-          It also sharpened the theme running through all of my work: behavior
-          change sticks when systems reduce pressure. The
+          It also sharpened a design hypothesis I want to keep testing:
+          reducing social pressure may make support easier to accept. The
           honest limitation is that this was evaluated as a concept, in single
           sessions. The claim that gentle accountability sustains engagement
           past the point where competitive apps lose people is exactly the sort
